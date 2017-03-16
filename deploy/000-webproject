@@ -1,0 +1,5 @@
+<VirtualHost *:80>
+    Alias /static /var/www/django/arieltsai/static
+    Alias /media /var/www/django/arieltsai/media
+    WSGIScriptAlias / /var/www/django/arieltsai/wsgi.py
+</VirtualHost>

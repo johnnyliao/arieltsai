@@ -1,7 +1,7 @@
 import sys
 import os
 
-PROJECT_ROOT = "/var/www/django/the_parent"
+PROJECT_ROOT = "/var/www/django/arieltsai"
 
 # for project's apps
 sys.path.append(PROJECT_ROOT)

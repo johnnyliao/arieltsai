@@ -220,7 +220,7 @@ INSTALLED_APPS = (
 
     "rest_framework",
     "rest_framework_swagger",
-
+    "main",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",

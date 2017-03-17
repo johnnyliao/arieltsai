@@ -132,6 +132,9 @@ header .menuBox li{
     margin-left: 10px
     margin-bottom:15px;
 }
+.container .musicBoxTxt,.container .aboutBoxTxt{
+    padding: 10px;
+}
 header .loginBox{
     display: inline-block;
     right: 15px;

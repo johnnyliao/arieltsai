@@ -103,7 +103,6 @@ header .menuBox li{
 .wrap .container .ringBox .ringBoxTxt,.wrap .container .musicBox .musicBoxTxt,.wrap .container .bookBox .bookBoxTxt,.wrap .container .aboutBox .aboutBoxTxt,.wrap .container .bannerBox .bannerBoxTxt,.wrap .container .shareBox .shareBoxTxt{
     font-size: 16px;
     line-height: 150%;
-    padding: 10px;
     margin-top: 10px;
 }
 .wrap .container .ringBoxTxt li{
@@ -348,7 +347,9 @@ footer a{
     line-height: 30px;
     font-family: Arial, Helvetica, sans-serif,Microsoft JhengHei;
 }
-.amazingslider-arrow-left-1,.amazingslider-arrow-right-1{
+
+.amazingslider-box-1:hover > .amazingslider-arrow-left-1,
+.amazingslider-box-1:hover > .amazingslider-arrow-right-1{
     display: block!important;
 }
 .amazingslider-nav-1{
@@ -356,6 +357,9 @@ footer a{
 }
 .sweet-modal-box{
     margin-top: 0px!important;
+}
+#amazingslider-1{
+    width: 100%!important;
 }
 .winnerForm{
     background: #fff;

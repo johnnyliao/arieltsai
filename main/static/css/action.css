@@ -1,0 +1,425 @@
+@charset "utf-8";
+/* 載入 */
+body{
+    background: #FFF;
+    font-family: Arial,Heiti TC, Helvetica, sans-serif,Microsoft JhengHei;
+    cursor: auto;
+    color: #858585;
+}
+h2{
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #202020;
+    font-family: Helvetica, Microsoft JhengHei;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 125%;
+    letter-spacing: normal;
+    text-align: left;
+}
+a{
+    color: #f38daf;
+    font-weight: bold;
+    text-decoration: none;
+}
+p{
+    margin:10px 0px;
+}
+.wrap{
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: #f6f7f9;
+    padding-bottom: 20px;
+    border-top: 0;
+    border-bottom: 0;
+    padding-top: 0;
+}
+header{
+    height: 65px;
+    text-align: center;
+    margin-bottom: 15px;
+    position: fixed;
+    top: 0px;
+    z-index: 999999;
+    background: #fff;
+    width: 100% !important;
+    max-width: 640px;
+    margin: 0 auto;
+    float: none !important;
+}
+header img{
+    height: 50px;
+}
+header .menuBox li{
+    display: inline-block;
+    font-size: 12px;
+}
+.wrap .logoBox{
+    padding:5px;
+    position: relative;
+    z-index: 999;
+    border-bottom: 1px solid #e8e8e8;
+}
+.wrap .container{
+    padding:120px 15px 0px 15px;
+}
+.wrap .container #amazingslider-wrapper-1{
+    margin: 0px auto 20px !important;
+}
+.wrap .container .amazingslider-bottom-shadow-1 img{
+    display: none!important;
+}
+.wrap .container .amazingslider-bullet-1{
+    display: none;
+}
+.wrap .container .visitEventBox{
+    background: #fff;
+    padding: 15px;
+}
+.wrap .container .btnBox .visitBox{
+    display: inline-block;
+    padding: 5px;
+    width: 80%;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: super;
+    border-radius: 4px;
+    background: #f390b1;
+    color: #FFF;
+    font-size: 18px;
+}
+.wrap .container .ringBox,.wrap .container .musicBox,.wrap .container .bookBox,.wrap .container .aboutBox,.wrap .container .bannerBox,.wrap .container .shareBox{
+    background: #FFF;
+    margin: 20px 0px;
+}
+.wrap .container .ringBox h3,.wrap .container .musicBox h3,.wrap .container .bookBox h3,.wrap .container .aboutBox h3,.wrap .container .bannerBox h3,.wrap .container .shareBox h3{
+    margin: 10px 0px;
+}
+.wrap .container .ringBox .ringBoxImg img,.wrap .container .musicBox .musicBoxImg img,.wrap .container .bookBox .bookBoxImg img,.wrap .container .aboutBox .aboutBoxImg img,.wrap .container .bannerBox .bannerBoxImg img,.wrap .container .shareBox .shareBoxImg img{
+    width: 100%;
+}
+.wrap .container .ringBox .ringBoxTxt,.wrap .container .musicBox .musicBoxTxt,.wrap .container .bookBox .bookBoxTxt,.wrap .container .aboutBox .aboutBoxTxt,.wrap .container .bannerBox .bannerBoxTxt,.wrap .container .shareBox .shareBoxTxt{
+    font-size: 16px;
+    line-height: 150%;
+    padding: 10px;
+    margin-top: 10px;
+}
+.wrap .container .ringBoxTxt li{
+    display: inline-block;
+    vertical-align: top;
+}
+.container .musicBox .musicBoxTxt a{
+    color: #f38daf;
+    font-weight: bold;
+    text-decoration: none;
+}
+.container .bookBox .bookBoxTxt a{
+    /*color: #E91E63;*/
+    font-weight: bold;
+    text-decoration: none;
+}
+.container .shareBox{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.container .shareBox iframe{
+    margin-bottom: 15px;
+}
+.container .shareBox .shareOther img{
+    width: 10%;
+    margin-left: 10px
+    margin-bottom:15px;
+}
+header .loginBox{
+    display: inline-block;
+    right: 15px;
+    position: absolute;
+}
+header .loginBox .dropdownIcon{
+    transform: scale(1.2);
+    color: rgba(0,0,0,.43);
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid \9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+header .loginBox img{
+    border-radius: 40px;
+}
+header .logoinMenu{
+    width: 120px;
+    position: absolute;
+    right: 15px;
+    top:50px;
+}
+header .logoinMenu ul{
+    background: #e8e8e8;
+    border-radius: 4px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+header .logoinMenu ul li{
+    padding: 2%;
+    line-height: 40px;
+}
+header .logoinMenu ul li:nth-child(1){
+    border-bottom: 1px solid #cccccc;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+header .logoinMenu{
+    display: none;
+}
+header #logoutBox{
+    display: none;
+    vertical-align: top;
+}
+header .logoutBoxActive{
+    display: inline-block;
+}
+header #loginBox{
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 59px;
+}
+header #loginBox a{
+    border: 1px solid #f38daf;
+    padding: 5%;
+    display: block;
+    border-radius: 4px;
+    background: #f38daf;
+    color: #FFF;
+}
+.amazingslider-space-1{
+    /*height: 380px!important;*/
+}
+.amazingslider-text-box-1{
+    display:none!important;
+}
+.amazingslider-play-1{
+    vertical-align: middle;
+}
+footer{
+    background: #e8e8e8;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+    font-weight: 100;
+    font-size: 14px;
+}
+footer p{
+    margin: 0 10px;
+    text-align: center;
+    color: #858585;
+    font-weight: bold;
+}
+footer span{
+    display: inline-block;
+}
+footer .lineMiddle{
+    margin: -1.5px 5px 0px 5px;
+    vertical-align: top;
+}
+footer a{
+    color: #858585;
+    font-weight:bold;
+    display: inline-block;
+}
+/*活動辦法*/
+.actionTitle{
+    font-weight: bold;
+    color: #E91E63;
+}
+.slides li{
+    border:1px solid #e8e8e8;
+}
+.visitEventBoxTitle h6{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #bdbdbd;
+    margin-bottom: 15px;
+}
+.visitEventBoxTxt .giftBoxTitle{
+    margin-top: 20px;
+    line-height: 30px;
+}
+.visitEventBoxTxt .giftNameBox{
+    font-size: 14px;
+    text-align: left;
+    padding: 0px 10px;
+    line-height: 24px;
+    min-height: 50px;
+    margin-top: 5px;
+}
+.visitEventBoxTxt .giftNameBox h3{
+    display: -webkit-box;
+    overflow:hidden;
+    text-overflow : ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.visitEventBoxTxt .giftQuantityBox{
+    font-size: 14px;
+    text-align: center;
+    padding: 0px 10px;
+    line-height: 24px;
+    border-top:1px solid #e8e8e8;
+}
+.visitEventBoxTxt a{
+    color: #858585;
+}
+.actionBox p{
+    font-size: 16px;
+    line-height: 30px;
+}
+.colorBoxR{
+    display: inline-block;
+    width: 5px;
+    background-color: #f974a1;
+    height: 14px;
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+.giftBoxTitle .colorBoxR{
+    margin-bottom: 8px;
+}
+.sweet-modal-box {
+    overflow-y: none!important;
+}
+.sweet-modal-overlay{
+    z-index: 999999!important;
+}
+.actionMenu ul{
+    margin-top: 15px;
+}
+.actionMenu ul li{
+    display: inline-block;
+    line-height: 30px;
+}
+.sweet-modal-content iframe{
+    padding-bottom: 20px;
+}
+.sweet-modal-content{
+    padding-bottom: 150px!important;
+}
+.step1 h5,.step2 h5,.step3 h5,.step4 h5{
+    border-radius: 4px;
+    background: #e8e8e8;
+    padding: 5px;
+    width: 60px;
+    display: block;
+    text-align: center;
+}
+.step4 h5{
+    border-radius: 4px;
+    background: #e8e8e8;
+    padding: 5px;
+    width: 80px;
+    display: block;
+    text-align: center;
+}
+.step1 a{
+    margin-right: 5px;
+    border: 1px solid #f38daf;
+    padding: 0px 5px;
+    display: inline-block;
+    border-radius: 4px;
+    background: #f38daf;
+    color: #FFF;
+}
+.step2 p{
+    margin: 20px 0px;
+}
+.sweet-modal-overlay.open .sweet-modal-box .sweet-modal-content, .sweet-modal-overlay.open .sweet-modal-box .sweet-modal-buttons{
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif,Microsoft JhengHei;
+}
+.amazingslider-arrow-left-1,.amazingslider-arrow-right-1{
+    display: block!important;
+}
+.amazingslider-nav-1{
+    display: none !important;
+}
+.sweet-modal-box{
+    margin-top: 0px!important;
+}
+.winnerForm{
+    background: #fff;
+    padding: 15px;
+}
+.winnerForm .inline{
+    display: inline-block;
+}
+.sweet-modal-content{
+    padding-bottom: 100px;
+}
+td{
+    font-size: 12px;
+}
+td h1{
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 5px;
+    color: #E91E63;
+    font-weight: bold;
+    font-size: 20px;
+}
+table{
+    width: 100%;
+    margin-bottom: 15px;
+}
+table li{
+    display: inline-block;
+    min-width: 22%;
+    max-width: 22%;
+    margin-right: 5px;
+    min-height: 40px;
+    vertical-align: top;
+}
+.sweet-modal-overlay.open .sweet-modal-box .sweet-modal-content, .sweet-modal-overlay.open .sweet-modal-box .sweet-modal-buttons{
+    height: 100%!important;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    background: transparent url(../img/mvBanner.png) no-repeat 0 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+video[poster]{
+    z-index: 999999999
+}
+@media screen and (max-width:640px){
+.wrap .container .btnBox .visitBox{
+    width: 72%;
+}
+.mvIframe{
+    height: 380px;
+}
+}
+@media screen and (max-width:440px){
+.wrap .container .btnBox .visitBox{
+    width: 70%;
+}
+}
+@media screen and (max-width:440px){
+.wrap .container .btnBox .visitBox{
+    width: 58%;
+}
+}

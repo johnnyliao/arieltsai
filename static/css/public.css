@@ -1,0 +1,21 @@
+﻿@charset "utf-8";
+/* 載入 */
+
+body{
+    font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif,Microsoft JhengHei;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+header, .header[_height="none"]{
+    display: none;
+}
+.container_default{
+    display: none;
+}
+.under-nav{
+    display: none;
+}
+footer[_height="none"]{
+    display: none;
+}

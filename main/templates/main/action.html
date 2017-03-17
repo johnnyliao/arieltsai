@@ -5,26 +5,27 @@
 <html prefix='og: http://ogp.me/ns#'>
 <head>
 
-<meta property="og:title" content="2017情人節告白活動，那對夫妻好禮送溫暖" ></meta>
+<meta property="og:title" content="清新創作女聲- 蔡佩軒 Ariel Tsai" ></meta>
 <meta property="og:type" content="website" ></meta>
-<meta property="og:description" content="妳 可以公主病 可以鬧脾氣 就讓我永遠守護妳" ></meta>
+<meta property="og:description" content="清新創作女聲- 蔡佩軒 Ariel Tsai" ></meta>
 <meta property="og:image" content="http://nicokim.cc/static/img/banner2.jpg" ></meta>
 <meta property="og:url" content="http://nicokim.cc" ></meta>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
 
-<title>那對夫妻Nico & Kim</title>
+<title>蔡佩軒 Ariel Tsai</title>
 <link href="{% static "css/reset.css"%}" rel="stylesheet" type="text/css" />
 <link href="{% static "css/action.css"%}" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="{% static "css/categorySlide.css"%}">
 <script type="text/javascript" src="{% static "js/jquery-1.8.2.min.js"%}"></script>
 <script type="text/javascript" src="{% static "js/public.js"%}"></script>
-<!--輪播專用 start-->
-	<script src="{% static "js/amazingslider.js"%}"></script>
-	<link rel="stylesheet" type="text/css" href="{% static "js/amazingslider-1.css"%}">
-	<script src="{% static "js/initslider-1.js"%}"></script>
-<!--輪播專用 End-->
+
+<!--輪播用 start-->
+<script src="{% static "js/amazingslider.js"%}"></script>
+<link rel="stylesheet" type="text/css" href="{% static "js/amazingslider-1.css"%}">
+<script src="{% static "js/initslider-1.js"%}"></script>
+<!--輪播用 End-->
 
 <!--FB留言用 start-->
 <!-- pilipress::fb_admins -->
@@ -109,14 +110,7 @@
    });
 </script>
 <!--a 錨點滑動 End-->
-<!--左右滑動 start-->
-	<link rel="stylesheet" href="{% static "css/demo.css"%}" type="text/css" media="screen" />
-	<link rel="stylesheet" href="{% static "css/flexslider.css"%}" type="text/css" media="screen" />
-<!--左右滑動 End-->
-<!--彈窗使用css js start-->
-	<link rel="stylesheet" href="{% static "css/jquery.sweet-modal.min.css"%}" />
-	<script src="{% static "js/jquery.sweet-modal.min.js"%}"></script>
-<!--彈窗使用css js End-->
+
 </head>
 <body>
 <div class="wrap">
@@ -124,7 +118,7 @@
 		<div class="logoBox">
 			<a href="http://nicokim.cc" target="_blank"><img src="{% static "img/logo.png"%}" /></a>
 			<div id="loginBox" {% if not request.user.is_authenticated %}style=
-			"display:inline-block;"{% else %}style=
+			"display:none"{% else %}style=
 			"display:none;" {% endif %}>
 				<a id="facebook_login" href="/account/facebook/login">登入</a>
 			</div>
@@ -146,354 +140,172 @@
 			</div>
 		</div>
 		<div class="tabs fixed show-tab dark" fixed-tabs="#tv-tabs" ng-class="{'show-tab' : showTabs}" style="z-index:99;">
-	  		<a href="#anchor1" class="tab">情人節活動</a>｜
-	  		<a href="#anchor2" class="tab">單曲下載</a>｜
-	  		<a href="#anchor3" class="tab">新書介紹</a>｜
-	  		<a href="#anchor5" class="tab">關於我們</a>｜
-	  		<a href="#anchor6" class="tab">社群</a>｜
+	  		<a href="#anchor1" class="tab">活動專區</a>｜
+	  		<a href="#anchor2" class="tab">熱門歌曲</a>｜
+	  		<a href="#anchor3" class="tab">歌曲/鈴聲下載</a>｜
+	  		<a href="#anchor5" class="tab">關於Ariel</a>｜
+	  		<a href="#anchor6" class="tab">相關社群</a>｜
 	  		<a href="https://docs.google.com/forms/d/e/1FAIpQLSfRK3HhvN8ntjvBEZG2QL_a1E495G4y6k9EFByeJPnEHCgXZQ/viewform" target="_blank" class="tab">與我合作</a>
 		</div>
 	</header>
 	<div class="container" id="anchor1">
 		<div class="mvEvent">
-			<!--<video controls poster="{% static "img/mvBanner.png"%}">
-				<source src="https://s3-us-west-2.amazonaws.com/supermedianicokim/finale.mp4" type="video/mp4">
-				<source src="https://s3-us-west-2.amazonaws.com/supermedianicokim/finale.ogg" type="video/ogg">
-			</video>-->
-			<!--<div style="max-width:640px;">
-				<iframe class="mvIframe" style="width:100%;min-height: 360px;" src="https://www.youtube.com/embed/kA6EiwgN24I" frameborder="0" allowfullscreen></iframe>
-			</div>-->
-			<div style="max-width:640px;">
-		    <!--<iframe class="mvIframe" style="width:100%;min-height: 360px;" src="https://www.youtube.com/embed/kA6EiwgN24I" frameborder="0" allowfullscreen></iframe>-->
-		    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed//kA6EiwgN24I' frameborder='0' allowfullscreen></iframe></div>
-		   </div>
-			<!-- ＭＶ輪播 start
-		    <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:600px;margin:0px auto 56px;">
-		        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
-		            <ul class="amazingslider-slides" style="display:none;">
-		                <!--<li><img src="{% static "img/banner.png"%}" alt="mv"  title="mv" />
-		                </li>
-		                <li><img src="{% static "img/mvBanner.png"%}" />
-		                <video preload="none" src="https://www.youtube.com/embed/kA6EiwgN24I" ></video>
-		                </li>
-		            </ul>
-		            <ul class="amazingslider-thumbnails" style="display:none;">
-		                <li><img src="{% static "img/mv-tn.png"%}" alt="mv" title="mv" /></li>
-		                <li><img src="{% static "img/7aZZ945rgVA-tn.jpg"%}" /></li>
-		            </ul>
-		        <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Responsive Slider jQuery">Responsive Slider jQuery</a></div>
-		        </div>
-		    </div>-->
-		    <!--ＭＶ輪播 End-->
-		    <div class="visitEventBox">
-		    	<div class="visitEventBoxTitle">
-		    		<h2 class="actionTitle">2017情人節告白活動，那對夫妻好禮送溫暖</h2>
-		    		<h6>妳 可以公主病 可以鬧脾氣 就讓我永遠守護妳</h6>
-		    	</div>
-		    	<!--<div class="actionMenu">
-		    		<ul>
-		    			<li><a href="">抽獎贈品</a> | </li>
-		    			<li><a href="">活動辦法</a> | </li>
-		    			<li><a href="#">活動時間</a> | </li>
-		    			<li><a href="#" id="html-privacy">注意事項</a> | </li>
-		    			<li><a href="" id="">開獎辦法</a></li>
-		    		</ul>
-		    	</div>-->
-		    	<div class="actionBox">
-		    		<div class="actionTitleBox">
-		    			<h3><span class="colorBoxR"></span>活動期間</h3>
-		    			<p>即日起～2017-02-28 23:59</p>
-		    		</div>
-		    		<div class="actionTitleBox">
-		    			<h3><span class="colorBoxR"></span>開獎日期</h3>
-		    			<p>2017-03-01</p>
-		    		</div>
-		    		<div class="visitEventBoxTxt">
-			    		<h3 class="giftBoxTitle"><span class="colorBoxR"></span>抽獎贈品</h3>
-			    		<!--giftBox start-->
-						<div id="container" class="cf expertBox">
-							<h3><a href="#"></a></h3>
-							<div id="main" role="main">
-							  <section class="slider expertCon">
-								<div class="flexslider carousel expertArea">
-								  <ul class="slides">
-									<li>
-										<a href="https://shopee.tw/nicokim.cc" target="_blank">
-											<div class="experImg"><img src="{% static "img/A002.jpg"%}" /></div>
-											<div class="giftNameBox">
-												<h3>那對夫妻x山本富也禮盒</h3>
-											</div>
-											<div class="giftQuantityBox">
-												<p>數量:2</p>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="https://www.momomall.com.tw/store/Main.jsp?entp_code=100107" target="_blank">
-											<div class="experImg"><img src="{% static "img/A004.jpg"%}" /></div>
-											<div class="giftNameBox">
-												<h3>那對夫妻x奇檬子香氛洗衣精</h3>
-											</div>
-											<div class="giftQuantityBox">
-												<p>數量:2</p>
-											</div>
-										</a>
-									</li>
-									<li>
-										<div class="experImg"><img src="{% static "img/A005.png"%}" /></div>
-										<div class="giftNameBox">
-											<h3>那對夫妻x限量夫妻紅包袋</h3>
-										</div>
-										<div class="giftQuantityBox">
-											<p>數量:100</p>
-										</div>
-									</li>
-									<li>
-										<div class="experImg"><img src="{% static "img/A006.png"%}" /></div>
-										<div class="giftNameBox">
-											<h3>那對夫妻x限量手機防水袋</h3>
-										</div>
-										<div class="giftQuantityBox">
-											<p>數量:50</p>
-										</div>
-									</li>
 
-								  </ul>
-								</div>
-							  </section>
-							</div>
-						</div>
-						<!--giftBox End-->
-			    	</div>
-		    		<div class="actionTitleBox"><h3><span class="colorBoxR"></span>活動辦法</h3></div>
-		    		<div class="actionTxtBox">
-		    			<p>【那對夫妻】情人節甜蜜告白活動正式開跑囉！</p>
-		    			<p>
-		    				即日起只要參加那對夫妻官方網站活動就有機會抽得大獎！
-		    			</p>
-		    			<div class="step1">
-		    				<h5>Step1.</h5>
-			    			<p>
-			    				<a href="/account/facebook/login">登入/註冊</a>成為那對夫妻網站會員。
-			    			</p>
-		    			</div>
-		    			<div class="step2">
-		    				<h5>Step2.</h5>
-			    			<p>
-			    				<a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent('http://nicokim.cc'))));"><img src="{% static "img/share.png"%}" height="31.28" style="margin:0px 5px 0px 0px;" /></a>分享此頁面，並設定公開。
-			    			</p>
-		    			</div>
-		    			<div class="step3">
-		    				<h5>Step3.</h5>
-			    			<p>
-			    				在活動頁面下方點留言TAG一位告白對象，留下甜蜜告白，留言內容可自由發揮<br />
-			    				(例:@陳小美 妳 可以公主病 可以鬧脾氣 就讓我永遠守護妳，情人節快樂)<br />
-			    				(手機版本沒有標籤也可參加)
-
-			    			</p>
-		    			</div>
-		    			<div class="finishBox">
-		    				<p>完成以上三個動作即可參加抽獎活動。</p>
-		    				<p>詳細注意事項及開獎辦法請<a href="#" id="actionNotice">點此進入</a></p>
-		    			</div>
-		    			<div class="winnersBox step4">
-		    				<h5>得獎名單</h5>
-		    				<p>【那對夫妻】情人節甜蜜告白活動得獎名單公布囉!得獎名單請<a id="winners">點我</a>查看</p>
-		    			</div>
-		    		</div>
-		    	</div>
-		    	<div class="fb-comments" data-href="http://nicokim.cc/action/comment" data-width="100%" data-numposts="15">
-        		</div>
-		    </div>
 		</div>
 		<div class="musicBox" id="anchor2">
+			<!--<div class="musicBoxImg"><img src="{% static "img/0206.jpg"%}" /></div>-->
+			<div class="musicBoxTxt">
+				<h2>清新創作女聲-蔡佩軒 Ariel Tsai</h2>
+				<!--影片輪播 start-->
+					<!-- Insert to your webpage where you want to display the slider -->
+				    <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:610px;margin:0px auto 56px;">
+				        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+				            <ul class="amazingslider-slides" style="display:none;">
+				                <li><img src="{% static "img/AsC0CN2eGkY.jpg"%}" />
+				                <video preload="none" src="https://www.youtube.com/embed/AsC0CN2eGkY?v=AsC0CN2eGkY" ></video>
+				                </li>
+				                <li><img src="{% static "img/RbPI1_y1RAo.jpg"%}" />
+				                <video preload="none" src="https://www.youtube.com/embed/RbPI1_y1RAo?v=RbPI1_y1RAo" ></video>
+				                </li>
+				                <li><img src="{% static "img/K1BJ4M14ANQ.jpg"%}" />
+				                <video preload="none" src="https://www.youtube.com/embed/K1BJ4M14ANQ?v=K1BJ4M14ANQ" ></video>
+				                </li>
+				                <li><img src="{% static "img/6RFSEz0OqWY.jpg"%}" />
+				                <video preload="none" src="https://www.youtube.com/embed/6RFSEz0OqWY?v=6RFSEz0OqWY" ></video>
+				                </li>
+				                <li><img src="{% static "img/lTjNFA4NmBc.jpg"%}" />
+				                <video preload="none" src="https://www.youtube.com/embed/lTjNFA4NmBc?v=lTjNFA4NmBc" ></video>
+				                </li>
+				                <li><img src="{% static "img/QG1zfZ8Q0MQ.jpg"%}" />
+				                <video preload="none" src="https://www.youtube.com/embed/QG1zfZ8Q0MQ?v=QG1zfZ8Q0MQ" ></video>
+				                </li>
+				                <li><img src="{% static "img/fFSePi_E4Zk.jpg"%}" />
+				                <video preload="none" src="https://www.youtube.com/embed/fFSePi_E4Zk?v=fFSePi_E4Zk" ></video>
+				                </li>
+				                <li><img src="{% static "img/6CWw2RyBXC8.jpg"%}" />
+				                <video preload="none" src="https://www.youtube.com/embed/6CWw2RyBXC8?v=6CWw2RyBXC8" ></video>
+				                </li>
+				                <li><img src="{% static "img/DMFAtrY343k.jpg"%}" />
+				                <video preload="none" src="https://www.youtube.com/embed/DMFAtrY343k?v=DMFAtrY343k" ></video>
+				                </li>
+				                <li><img src="{% static "img/9s0oYrYwDOY.jpg"%}" />
+				                <video preload="none" src="https://www.youtube.com/embed/9s0oYrYwDOY?v=9s0oYrYwDOY" ></video>
+				                </li>
+				                <li><img src="{% static "img/D5wO_WttZbo.jpg"%}" />
+				                <video preload="none" src="https://www.youtube.com/embed/D5wO_WttZbo?v=D5wO_WttZbo" ></video>
+				                </li>
+				                <li><img src="{% static "img/NB4TzUeE_H0.jpg"%}" />
+				                <video preload="none" src="https://www.youtube.com/embed/NB4TzUeE_H0?v=NB4TzUeE_H0" ></video>
+				                </li>
+				                <li><img src="{% static "img/ErII2m5xWUg.jpg"%}" />
+				                <video preload="none" src="https://www.youtube.com/embed/ErII2m5xWUg?v=ErII2m5xWUg" ></video>
+				                </li>
+				                <li><img src="{% static "img/ns7Ox9DujJM.jpg"%}" />
+				                <video preload="none" src="https://www.youtube.com/embed/ns7Ox9DujJM?v=ns7Ox9DujJM" ></video>
+				                </li>
+				            </ul>
+				            <ul class="amazingslider-thumbnails" style="display:none;">
+				                <li><img src="{% static "img/AsC0CN2eGkY-tn.jpg"%}" /></li>
+				                <li><img src="{% static "img/RbPI1_y1RAo-tn.jpg"%}" /></li>
+				                <li><img src="{% static "img/K1BJ4M14ANQ-tn.jpg"%}" /></li>
+				                <li><img src="{% static "img/6RFSEz0OqWY-tn.jpg"%}" /></li>
+				                <li><img src="{% static "img/lTjNFA4NmBc-tn.jpg"%}" /></li>
+				                <li><img src="{% static "img/QG1zfZ8Q0MQ-tn.jpg"%}" /></li>
+				                <li><img src="{% static "img/fFSePi_E4Zk-tn.jpg"%}" /></li>
+				                <li><img src="{% static "img/6CWw2RyBXC8-tn.jpg"%}" /></li>
+				                <li><img src="{% static "img/DMFAtrY343k-tn.jpg"%}" /></li>
+				                <li><img src="{% static "img/9s0oYrYwDOY-tn.jpg"%}" /></li>
+				                <li><img src="{% static "img/D5wO_WttZbo-tn.jpg"%}" /></li>
+				                <li><img src="{% static "img/NB4TzUeE_H0-tn.jpg"%}" /></li>
+				                <li><img src="{% static "img/ErII2m5xWUg-tn.jpg"%}" /></li>
+				                <li><img src="{% static "img/ns7Ox9DujJM-tn.jpg"%}" /></li>
+				            </ul>
+				        <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Responsive JavaScript Image Slider">Responsive JavaScript Image Slider</a></div>
+				        </div>
+				    </div>
+				    <!-- End of body section HTML codes -->
+				<!--影片輪播 End-->
+
+			</div>
+		</div>
+		<div class="musicBox" id="anchor3">
 			<div class="musicBoxImg"><img src="{% static "img/0206.jpg"%}" /></div>
 			<div class="musicBoxTxt">
-				<h2>地表最強網紅家庭那對夫妻KIM</h2>
+				<h2>清新創作女聲-蔡佩軒 Ariel Tsai</h2>
 				<h3>單曲下載：</h3>
 				<p>
-					<a href="http://bit.ly/Nini-KKbox" target="_blank">KKbox</a> |
-					<a href="https://itun.es/tw/DzFVhb" target="_blank">iTunes</a> |
-					<a href="http://bit.ly/Nini-Indievox" target="_blank">Indievox</a> |
-					<a href="http://bit.ly/Nini-Omusic" target="_blank">Omusic</a> |
-					<a href="http://bit.ly/Nini-myMusic" target="_blank">myMusix</a> |
-					<a href="http://bit.ly/Nini-hmv" target="_blank">hmv</a> |
-					<a href="http://bit.ly/Nini-Spotify" target="_blank">Spotify</a> |
-					<a href="http://bit.ly/Nini-Xiami" target="_blank">虾米音乐</a> |
-					<a href="http://bit.ly/Nini-163music" target="_blank">网易云音乐</a> |
-					<a href="http://bit.ly/Nini-Baidu" target="_blank">百度音乐</a>
+					<a href="http://kkbox.fm/aa1omL" target="_blank">KKbox</a> |
+					<a href="https://www.indievox.com/disc/12324" target="_blank">Indievox</a> |
+					<a href="http://music.fetnet.net/albumpage.php?album_id=1321492" target="_blank">Omusic</a> |
+					<a href="http://www.mymusic.net.tw/ux/w/album/show/448007" target="_blank">myMusix</a> |
+					<a href="http://bit.ly/2nqlLgI" target="_blank">hmv</a> |
+					<a href="#" target="_blank">Spotify</a> |
+					<a href="#" target="_blank">虾米音乐</a> |
+					<a href="https://moov.hk/share/appshare.jsp?pageid=11&profileId=VASV00223909A" target="_blank">MOOV</a> |
+					<a href="#" target="_blank">QQ音樂</a> |
+					<a href="http://music.163.com/#/album?id=35261279" target="_blank">网易云音乐</a> |
+					<a href="http://music.baidu.com/album/537900577?pst=sug" target="_blank">百度音乐</a> |
+					<a href="http://www.kuwo.cn/album/2152799?catalog=yueku2016" target="_blank">酷狗音乐</a> |
+					<a href="#" target="_blank">酷我音乐</a>
 				</p>
 				<div class="ringBoxTxt">
 					<h3>來電答鈴下載：</h3>
 					<ul>
 						<li>
-							<a href="http://bit.ly/Nini-FET" target="_blank">遠傳</a> |
+							<a href="#" target="_blank">遠傳</a> |
 						</li>
 						<li>
-							<a href="http://colorring.qma.com/crbt/pages/mb/main.jsp" target="_blank">亞太</a> |
+							<a href="#" target="_blank">亞太</a> |
 						</li>
 						<li>
-							<a href="http://bit.ly/Nini-emome" target="_blank" target="_blank">中華</a> |
+							<a href="#" target="_blank" target="_blank">中華</a> |
 						</li>
 						<li>
-							<a href="http://bit.ly/Nini-Taiwanmobile" target="_blank">台灣大哥大</a> |
+							<a href="#" target="_blank">台灣大哥大</a> |
 						</li>
 						<li>
-							<a href="http://bit.ly/Nini-Tstar" target="_blank">台灣之星</a>
+							<a href="#" target="_blank">台灣之星</a>
 						</li>
 					</ul>
 				</div>
-				<!--<div class="ringBoxTxt" style="margin-top:15px;display: inline-block;"><h3>遠傳來電答鈴：</h3><a href="http://bit.ly/Nini-FET" target="_blank">點我下載</a></p></div>
-				<div class="ringBoxTxt" style="margin-top:15px;display: inline-block;    margin-left: 15px;"><h3>亞太來電答鈴：</h3><a href="http://colorring.qma.com/crbt/pages/mb/main.jsp" target="_blank">點我下載</a></p></div>
-				<div class="ringBoxTxt" style="margin-top:15px;display: inline-block;    margin-left: 15px;"><h3>中華來電答鈴：</h3><a href="http://bit.ly/Nini-emome" target="_blank">點我下載</a></p></div>
-				<div class="ringBoxTxt" style="margin-top:15px;display: inline-block;    margin-left: 15px;"><h3>台哥大來電答鈴：</h3><a href="http://bit.ly/Nini-Taiwanmobile" target="_blank">點我下載</a></p></div>
-				<div class="ringBoxTxt" style="margin-top:15px;display: inline-block;"><h3>台灣之星來電答鈴：</h3><a href="http://bit.ly/Nini-Tstar" target="_blank">點我下載</a></p></div>-->
-				<!--<p>
-					頂著最強網紅家庭的那對夫妻的KIM，之前參加過新光大道第一屆海選就被淘汰，還有眾多歌唱比賽也沒被選上，但一路上只有老婆NICO鼓勵他絕對不要放棄，現在KIM終於能如願出單曲並可供所有喜愛他們的人所下載了，KIM沒有什麼其他想法，只想說~老婆”我做到了”！「謝謝這一路上只有妳覺得我可以!而我最在意的，也永遠只有妳！」那對夫妻12年來始終互相扶持，讓人看到展現令人鶼鰈情深動容的一面。
-				</p>-->
 
 			</div>
-		</div>
-		<div class="bookBox" id="anchor3">
-			<div class="bookBoxImg"><img src="{% static "img/FB.png"%}" /></div>
-			<div class="bookBoxTxt">
-				<h2>百萬台灣網紅【那對夫妻】出書了</h2>
-				<p>百萬粉絲的台灣網紅「那對夫妻」出書了!平時FB上恩愛的影片受到廣大粉絲喜愛，這次他們將12年一路走來的點滴故事集結成冊，用網路力量來感動更多粉絲！
-				</p>
-				<!--<p>
-					新書眾好友藝人大力推薦！ 「那對夫妻」FB粉專上的影片，已經是台灣民眾高壓生活的療癒小確幸，自然不做作的內容，搞笑又溫馨，十足台味的三口家庭，引起廣大鄉民的喜愛，快速傳播，半年內粉絲數衝破百萬！其中妮妮與夫Kim的放閃影片，更是號稱史上最強小三，沒有之一了。
-				</p>
-				<p>
-					為了給長大後的妮妮一份愛的禮物，夫妻兩人特別打開塵封的愛情往事，從一見鍾情到妮妮出生，12年來的點點滴滴，義無反顧的出走、酸甜動人的相守、爆笑不斷的真實生活，詳細收錄在新書當中。其中Kim還特別作詞作曲一首歌曲，獻給老婆和妮妮，兩人也重遊舊地重拍婚紗、拍攝MV，再次感受心動的瞬間！新書的用心創作，更受到羅志祥、愷樂、黑人&范范的大力推薦！
-				</p>-->
-				<h3>購買通路：</h3>
-				<!--<p style="font-size: 20px;font-weight: bold;">~妮可以公主病-平裝版~</p>-->
-				<a href="http://bit.ly/LoveisAllTheseTinyLittleThings-paperback-books" target="_blank" >博客來</a>｜
-				<a href="http://bit.ly/LoveisAllTheseTinyLittleThing-paperback-KingStone" target="_blank" >金石堂</a>｜
-				<a href="http://bit.ly/LoveisAllTheseTinyLittleThings-paperback-eslite" target="_blank" >誠品</a>｜
-				<a href="http://bit.ly/LoveisAllTheseTinyLittleThings-paperback-TAZZE" target="_blank" >讀冊生活</a>｜
-				<a href="http://bit.ly/LoveisAllTheseTinyLittleThings-paperback-suncolor" target="_blank" >三采文化</a>｜
-				<a href="http://www.suncolor.com.tw/Event/201701the-couple/index.html" target="_blank" >新書專屬區</a><br /><br />
-				<h2>史上最強【那對夫妻】將於2/11國際書展來踢館了！</h2>
-				<p>簽書會資訊如下:<br /><br />
-					台北場：<br />
-					02/11(六) 下午16：00<br />
-					國際書展(世貿中心一館)三采攤位<br /><br />
-
-					板橋場：<br />
-					03/12(日) 下午15：00 <br />
-					板橋大遠百一樓米蘭廣場<br /><br />
-
-					高雄場：<br />
-					03/19(日)下午14：00 <br />
-					高雄金石堂左營店(環球百貨)二樓室內大廳<br /><br />
-
-					台中場：<br />
-					03/26(日)下午15：00 <br />
-					台中大遠百一樓戶外場地<br />
-				</p>
-			</div>
-		</div>
-		<div class="bookBox" id="anchor4">
-			<!--<div class="bookBoxImg"><img src="img/FB.png" /></div>-->
-			<!--<div class="bookBoxTxt">
-				<h2>史上最強【那對夫妻】將於2/11國際書展來踢館了！</h2>
-				<p>簽書會資訊如下:<br /><br />
-					台北場：<br />
-					02/11(六) 下午16：00<br />
-					國際書展(世貿中心一館)三采攤位<br /><br />
-
-					板橋場：<br />
-					03/12(日) 下午15：00 <br />
-					板橋大遠百一樓米蘭廣場<br /><br />
-
-					高雄場：<br />
-					03/19(日)下午14：00 <br />
-					高雄金石堂左營店(環球百貨)二樓室內大廳<br /><br />
-
-					台中場：<br />
-					03/26(日)下午15：00 <br />
-					台中大遠百一樓戶外場地<br />
-				</p>
-			</div>-->
 		</div>
 
 		<div class="aboutBox" id="anchor5">
 			<div class="aboutBoxImg"><img src="{% static "img/0221.jpg"%}" /></div>
 			<div class="aboutBoxTxt">
-				<h2>關於那對夫妻</h2>
+				<h2>關於 Ariel</h2>
 				<p>
-					【那對夫妻】Facebook粉絲團成立2015年，截至2017年2月粉絲人數逼近200萬 ，內容包括夫妻間（Nico品筠&Kim京燁 ）趣味對話、小朋友（妮妮）爆笑短片等，都是一些日常生活的片段。這些片段已經是台灣民眾高壓生活的療癒小確幸，自然不做作的內容，搞笑又溫馨，十足台味的三口家庭，引起廣大鄉民的喜愛，快速傳播，Facebook發布親子之間的逗趣影片，讓他們在記錄路中寫下，一年之內就衝到150萬粉絲數，2017年1月26日 那對夫妻單曲「妮妮」正式上線，2月2日 衝破KKBOX日榜冠軍，擠下Hebe田馥甄「當你」2月3日 衝破KKBOX總榜冠軍，擠下周杰倫「告白氣球」2月3當天晚上那對夫妻新書預購1500本精裝版15分鐘內秒殺，創下平均每0.6秒售出一本記錄，被媒體封為「地表最強網紅家庭」!
+					新生代創作歌手【蔡佩軒 Ariel Tsai】溫暖翻唱師兄【那對夫妻-KIM林京燁】告白神曲《妮妮》。Ariel 溫暖療癒的嗓音和不同的詮釋方式詮釋《妮妮》，獲得各大媒體相繼報導，佳評如潮。Ariel 因為第一次聽到《妮妮》便覺得很感動很溫暖，所以決定翻唱和傳遞這首歌的正能量，發佈至今已感動百萬聽眾，獲得熱烈迴響。
 				</p>
+				<p>蔡佩軒 Ariel Tsai（1995年1月23日 - ）新生代創作女歌手，出生於台灣台北，從小移居加拿大溫哥華。現就讀加拿大英屬哥倫比亞大學 (University of British Columbia) 藥學系。</p>
+				<p>Ariel 5歲開始學鋼琴，從小喜歡音樂喜歡寫歌，在14歲的時候寫出第一首完整自己作詞作曲的歌。
+				<p>平常除了錄音寫歌之外，空閑的時候在教會服侍，帶小組和敬拜樂團擔任主領主唱。現在就讀ＵＢＣ藥學系大三。最喜歡跟家人朋友在一起和看很多很多的電影！</p>
+				<p>2016年9月Ariel開始在臉書經營自彈自唱的直播節目，翻唱許多熱門排行榜好歌，深獲觀眾喜愛，至今累積超過50集平均每集直播10-20萬次瀏覽。</p>
+				<p>Rising singer/songwriter Ariel Tsai covers “Nini,” the number one hit love song in Asia originally by Kim from The Couple. Ariel reinterprets the song with her warm and comforting vocals, gaining a lot of media attention from famous news sources and various social media platforms. When Ariel first heard “Nini,” she was very moved by the song and decided to cover it in hopes of spreading that same positive energy to those who heard it as well. Within 2 weeks of its release, Ariel’s cover of “Nini” hit over 1.8 million views, continuing to impact and touch many who hear the song.
+Ariel Tsai (born 23 January 1995) is a Taiwanese singer/songwriter, born in Taipei, Taiwan and grew up in Vancouver, Canada. She is currently studying Pharmacy at the University of British Columbia. </p>
+				<p>Passionate about music from a young age, Ariel started playing piano at age 5 and wrote her first song at age 14. </p>
+				<p>Since September 2016, Ariel has been livestreaming on her Facebook page, showcasing her singing and piano playing skills by covering various popular songs live. She has gained immensely positive feedback and attention since then, with over 50 livestream episodes, each with an average of 100K to 200K views.</p>
 			</div>
 		</div>
 		<div class="shareBox" id="anchor6">
-			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F1006nk%2F%3Ffref%3Dts&tabs&width=250&height=130&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=1705033186453307" width="250" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F%E9%82%A3%E5%B0%8D%E5%A4%AB%E5%A6%BB-Kim%E4%BA%AC%E7%87%81-1717090055218199%2F&tabs&width=250&height=130&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=1705033186453307" width="250" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F%E9%82%A3%E5%B0%8D%E5%A4%AB%E5%A6%BBNico%E5%93%81%E7%AD%A0-195295667610836%2F&tabs&width=250&height=130&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=1705033186453307" width="250" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnimonicokim%2F&tabs&width=250&height=130&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=1705033186453307" width="250" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 			<div class="shareOther">
-				<a href="http://bit.ly/2jdtTPs" target="_blank"><img src="{% static "img/youtube.png"%}"></a>
-				<a href="http://goo.gl/LvaEid" target="_blank"><img src="{% static "img/IG.png"%}"></a>
-				<a href="http://bit.ly/nikokimline"><img src="{% static "img/line.png"%}"></a>
-				<a href="http://www.meipai.com/user/46678953" target="_blank"><img src="{% static "img/vedio.png"%}"></a>
-				<a href="http://weibo.com/u/5525600359" target="_blank"><img src="{% static "img/weibo.png"%}"></a>
+				<a href="http://bit.ly/ariel_tsai_FB" target="_blank"><img src="{% static "img/fb_share.png"%}"></a>
+				<a href="http://bit.ly/ariel_tsai_youtube" target="_blank"><img src="{% static "img/youtube.png"%}"></a>
+				<a href="http://bit.ly/ariel_tsai_IG" target="_blank"><img src="{% static "img/IG.png"%}"></a>
+				<a href="http://bit.ly/nikokimline"><img src="{% static "img/kkbox.png"%}"></a>
+				<a href="http://bit.ly/ariel_tsai_meipai" target="_blank"><img src="{% static "img/vedio.png"%}"></a>
+				<a href="http://bit.ly/ariel_tsai_weibo" target="_blank"><img src="{% static "img/weibo.png"%}"></a>
 			</div>
 
 		</div>
-		<div class="bannerBox">
-			<div class="bannerBoxImg"><a href="http://nicokim.cc" target="_blank"><img src="{% static "img/banner3.png"%}" /></a></div>
-		</div>
 	</div>
 </div>
-<footer> <p><span>© 設計：</span><a href="http://supermedia.cool" target="_blank">SUPER MEDIA</a><span class="lineMiddle"> | </span><span>版權所有：</span><a href="http://nicokim.cc" target="_blank">那對夫妻</a></p></footer>
+<footer> <p><span>© 設計：</span><a href="http://supermedia.cool" target="_blank">SUPER MEDIA</a><span class="lineMiddle"> | </span><span>版權所有：</span><a href="http://nicokim.cc" target="_blank">蔡佩軒 Ariel Tsai</a></p></footer>
 <!--giftBox start-->
-	<script defer src="{% static "js/jquery.flexslider.js"%}"></script>
 	<div id="fb-root"></div>
-	<script type="text/javascript">
-	$(window).load(function(){
-    	$('.flexslider').flexslider({
-	        animation: "slide",
-	        animationLoop: true,
-	        itemWidth: 150,
-	        itemMargin: 20,
-	        minItems: 2,
-	        maxItems: 3,
-			keyboardNav: true,
-	        start: function(slider){
-	          $('body').removeClass('loading');
-	        }
-      	});
-      	$( "#winners" ).click(function() {
-      		var html = "<div><table><tr><td><h1>那對夫妻x山本富也禮盒<br>(共2名)</h1></td></tr><tr><td><ul>"
-      			{% for obj_1 in yamahoume_lists %}
-      				html += "<li>{{ forloop.counter }}. {{obj_1.user.socialaccount_set.all.0|get_name}}</li>"
-      			{% endfor %}
-	      	html += "</ul></td></tr></table>";
-      		html += "<table><tr><td><h1>那對夫妻x奇檬子香氛洗衣精<br>(共2名)</h1></td></tr><tr><td><ul>"
-      			{% for obj_1 in detergent_lists %}
-      				html += "<li>{{ forloop.counter }}. {{obj_1.user.socialaccount_set.all.0|get_name}}</li>"
-      			{% endfor %}
-      		html += "</ul></td></tr></table>"
-      		html += "<table><tr><td><h1>那對夫妻x限量夫妻紅包袋<br>(共100名)</h1></td></tr><tr><td><ul>"
-      			{% for obj_1 in nicokimred_lists %}
-					html +="<li>{{ forloop.counter }}. {{obj_1.user.socialaccount_set.all.0|get_name}}</li>"
-					{% endfor %}
-			html +=	"</ul></td></tr></table>"
-			html += "<table><tr><td><h1>那對夫妻x限量手機防水袋<br>(共50名)</h1></td></tr><tr><td><ul>"
-					{% for obj_1 in phone_lists %}
-					html += "<li>{{ forloop.counter }}. {{obj_1.user.socialaccount_set.all.0|get_name}}</li>"
-					{% endfor %}
-			html += "</ul></td></tr></table></div>"
-			html += "<div style=\"text-align: center;\">得獎者請在2017/3/9前，收到email並點擊連結，填寫基本資料完成送出後，才允受理。</div></diV>"
 
-		  $.sweetModal({
-			title: '得獎名單',
-			content: html
-			});
-		});
-    });
-  	</script>
   	<!--giftBox End-->
 </body>
 </html>

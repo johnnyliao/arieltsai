@@ -116,7 +116,7 @@
 <div class="wrap">
 	<header>
 		<div class="logoBox">
-			<a href="http://nicokim.cc" target="_blank"><img src="{% static "img/logo.png"%}" /></a>
+			<a href="http://nicokim.cc" target="_blank"><img src="{% static "img/logo1.png"%}" /></a>
 			<div id="loginBox" {% if not request.user.is_authenticated %}style=
 			"display:none"{% else %}style=
 			"display:none;" {% endif %}>
@@ -152,84 +152,83 @@
 		<div class="mvEvent">
 
 		</div>
-		<div class="musicBox1" id="anchor2">
+		<div class="musicBox" id="anchor2">
 			<!--<div class="musicBoxImg"><img src="{% static "img/0206.jpg"%}" /></div>-->
+			<!--影片輪播 start-->
+			<!-- Insert to your webpage where you want to display the slider -->
+		    <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:610px;margin:0px auto 56px;">
+		        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+		            <ul class="amazingslider-slides" style="display:none;">
+		                <li><img src="{% static "img/AsC0CN2eGkY.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/AsC0CN2eGkY?v=AsC0CN2eGkY" ></video>
+		                </li>
+		                <li><img src="{% static "img/RbPI1_y1RAo.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/RbPI1_y1RAo?v=RbPI1_y1RAo" ></video>
+		                </li>
+		                <li><img src="{% static "img/K1BJ4M14ANQ.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/K1BJ4M14ANQ?v=K1BJ4M14ANQ" ></video>
+		                </li>
+		                <li><img src="{% static "img/6RFSEz0OqWY.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/6RFSEz0OqWY?v=6RFSEz0OqWY" ></video>
+		                </li>
+		                <li><img src="{% static "img/lTjNFA4NmBc.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/lTjNFA4NmBc?v=lTjNFA4NmBc" ></video>
+		                </li>
+		                <li><img src="{% static "img/QG1zfZ8Q0MQ.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/QG1zfZ8Q0MQ?v=QG1zfZ8Q0MQ" ></video>
+		                </li>
+		                <li><img src="{% static "img/fFSePi_E4Zk.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/fFSePi_E4Zk?v=fFSePi_E4Zk" ></video>
+		                </li>
+		                <li><img src="{% static "img/6CWw2RyBXC8.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/6CWw2RyBXC8?v=6CWw2RyBXC8" ></video>
+		                </li>
+		                <li><img src="{% static "img/DMFAtrY343k.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/DMFAtrY343k?v=DMFAtrY343k" ></video>
+		                </li>
+		                <li><img src="{% static "img/9s0oYrYwDOY.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/9s0oYrYwDOY?v=9s0oYrYwDOY" ></video>
+		                </li>
+		                <li><img src="{% static "img/D5wO_WttZbo.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/D5wO_WttZbo?v=D5wO_WttZbo" ></video>
+		                </li>
+		                <li><img src="{% static "img/NB4TzUeE_H0.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/NB4TzUeE_H0?v=NB4TzUeE_H0" ></video>
+		                </li>
+		                <li><img src="{% static "img/ErII2m5xWUg.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/ErII2m5xWUg?v=ErII2m5xWUg" ></video>
+		                </li>
+		                <li><img src="{% static "img/ns7Ox9DujJM.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/ns7Ox9DujJM?v=ns7Ox9DujJM" ></video>
+		                </li>
+		            </ul>
+		            <ul class="amazingslider-thumbnails" style="display:none;">
+		                <li><img src="{% static "img/AsC0CN2eGkY-tn.jpg"%}" /></li>
+		                <li><img src="{% static "img/RbPI1_y1RAo-tn.jpg"%}" /></li>
+		                <li><img src="{% static "img/K1BJ4M14ANQ-tn.jpg"%}" /></li>
+		                <li><img src="{% static "img/6RFSEz0OqWY-tn.jpg"%}" /></li>
+		                <li><img src="{% static "img/lTjNFA4NmBc-tn.jpg"%}" /></li>
+		                <li><img src="{% static "img/QG1zfZ8Q0MQ-tn.jpg"%}" /></li>
+		                <li><img src="{% static "img/fFSePi_E4Zk-tn.jpg"%}" /></li>
+		                <li><img src="{% static "img/6CWw2RyBXC8-tn.jpg"%}" /></li>
+		                <li><img src="{% static "img/DMFAtrY343k-tn.jpg"%}" /></li>
+		                <li><img src="{% static "img/9s0oYrYwDOY-tn.jpg"%}" /></li>
+		                <li><img src="{% static "img/D5wO_WttZbo-tn.jpg"%}" /></li>
+		                <li><img src="{% static "img/NB4TzUeE_H0-tn.jpg"%}" /></li>
+		                <li><img src="{% static "img/ErII2m5xWUg-tn.jpg"%}" /></li>
+		                <li><img src="{% static "img/ns7Ox9DujJM-tn.jpg"%}" /></li>
+		            </ul>
+		        <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Responsive JavaScript Image Slider">Responsive JavaScript Image Slider</a></div>
+		        </div>
+		    </div>
+		    <!-- End of body section HTML codes -->
+			<!--影片輪播 End-->
 			<div class="musicBoxTxt">
-				<h2 style="padding:10px;">清新創作女聲-蔡佩軒 Ariel Tsai</h2>
-				<!--影片輪播 start-->
-					<!-- Insert to your webpage where you want to display the slider -->
-				    <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:610px;margin:0px auto 56px;">
-				        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
-				            <ul class="amazingslider-slides" style="display:none;">
-				                <li><img src="{% static "img/AsC0CN2eGkY.jpg"%}" />
-				                <video preload="none" src="https://www.youtube.com/embed/AsC0CN2eGkY?v=AsC0CN2eGkY" ></video>
-				                </li>
-				                <li><img src="{% static "img/RbPI1_y1RAo.jpg"%}" />
-				                <video preload="none" src="https://www.youtube.com/embed/RbPI1_y1RAo?v=RbPI1_y1RAo" ></video>
-				                </li>
-				                <li><img src="{% static "img/K1BJ4M14ANQ.jpg"%}" />
-				                <video preload="none" src="https://www.youtube.com/embed/K1BJ4M14ANQ?v=K1BJ4M14ANQ" ></video>
-				                </li>
-				                <li><img src="{% static "img/6RFSEz0OqWY.jpg"%}" />
-				                <video preload="none" src="https://www.youtube.com/embed/6RFSEz0OqWY?v=6RFSEz0OqWY" ></video>
-				                </li>
-				                <li><img src="{% static "img/lTjNFA4NmBc.jpg"%}" />
-				                <video preload="none" src="https://www.youtube.com/embed/lTjNFA4NmBc?v=lTjNFA4NmBc" ></video>
-				                </li>
-				                <li><img src="{% static "img/QG1zfZ8Q0MQ.jpg"%}" />
-				                <video preload="none" src="https://www.youtube.com/embed/QG1zfZ8Q0MQ?v=QG1zfZ8Q0MQ" ></video>
-				                </li>
-				                <li><img src="{% static "img/fFSePi_E4Zk.jpg"%}" />
-				                <video preload="none" src="https://www.youtube.com/embed/fFSePi_E4Zk?v=fFSePi_E4Zk" ></video>
-				                </li>
-				                <li><img src="{% static "img/6CWw2RyBXC8.jpg"%}" />
-				                <video preload="none" src="https://www.youtube.com/embed/6CWw2RyBXC8?v=6CWw2RyBXC8" ></video>
-				                </li>
-				                <li><img src="{% static "img/DMFAtrY343k.jpg"%}" />
-				                <video preload="none" src="https://www.youtube.com/embed/DMFAtrY343k?v=DMFAtrY343k" ></video>
-				                </li>
-				                <li><img src="{% static "img/9s0oYrYwDOY.jpg"%}" />
-				                <video preload="none" src="https://www.youtube.com/embed/9s0oYrYwDOY?v=9s0oYrYwDOY" ></video>
-				                </li>
-				                <li><img src="{% static "img/D5wO_WttZbo.jpg"%}" />
-				                <video preload="none" src="https://www.youtube.com/embed/D5wO_WttZbo?v=D5wO_WttZbo" ></video>
-				                </li>
-				                <li><img src="{% static "img/NB4TzUeE_H0.jpg"%}" />
-				                <video preload="none" src="https://www.youtube.com/embed/NB4TzUeE_H0?v=NB4TzUeE_H0" ></video>
-				                </li>
-				                <li><img src="{% static "img/ErII2m5xWUg.jpg"%}" />
-				                <video preload="none" src="https://www.youtube.com/embed/ErII2m5xWUg?v=ErII2m5xWUg" ></video>
-				                </li>
-				                <li><img src="{% static "img/ns7Ox9DujJM.jpg"%}" />
-				                <video preload="none" src="https://www.youtube.com/embed/ns7Ox9DujJM?v=ns7Ox9DujJM" ></video>
-				                </li>
-				            </ul>
-				            <ul class="amazingslider-thumbnails" style="display:none;">
-				                <li><img src="{% static "img/AsC0CN2eGkY-tn.jpg"%}" /></li>
-				                <li><img src="{% static "img/RbPI1_y1RAo-tn.jpg"%}" /></li>
-				                <li><img src="{% static "img/K1BJ4M14ANQ-tn.jpg"%}" /></li>
-				                <li><img src="{% static "img/6RFSEz0OqWY-tn.jpg"%}" /></li>
-				                <li><img src="{% static "img/lTjNFA4NmBc-tn.jpg"%}" /></li>
-				                <li><img src="{% static "img/QG1zfZ8Q0MQ-tn.jpg"%}" /></li>
-				                <li><img src="{% static "img/fFSePi_E4Zk-tn.jpg"%}" /></li>
-				                <li><img src="{% static "img/6CWw2RyBXC8-tn.jpg"%}" /></li>
-				                <li><img src="{% static "img/DMFAtrY343k-tn.jpg"%}" /></li>
-				                <li><img src="{% static "img/9s0oYrYwDOY-tn.jpg"%}" /></li>
-				                <li><img src="{% static "img/D5wO_WttZbo-tn.jpg"%}" /></li>
-				                <li><img src="{% static "img/NB4TzUeE_H0-tn.jpg"%}" /></li>
-				                <li><img src="{% static "img/ErII2m5xWUg-tn.jpg"%}" /></li>
-				                <li><img src="{% static "img/ns7Ox9DujJM-tn.jpg"%}" /></li>
-				            </ul>
-				        <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Responsive JavaScript Image Slider">Responsive JavaScript Image Slider</a></div>
-				        </div>
-				    </div>
-				    <!-- End of body section HTML codes -->
-				<!--影片輪播 End-->
-
+				<h2>清新創作女聲-蔡佩軒 Ariel Tsai</h2>
 			</div>
 		</div>
 		<div class="musicBox" id="anchor3">
-			<div class="musicBoxImg"><img src="{% static "img/0206.jpg"%}" /></div>
+			<div class="musicBoxImg"><img src="{% static "img/banner.jpg"%}" /></div>
 			<div class="musicBoxTxt">
 				<h2>清新創作女聲-蔡佩軒 Ariel Tsai</h2>
 				<h3>單曲下載：</h3>
@@ -242,11 +241,11 @@
 					<a href="#" target="_blank">Spotify</a> |
 					<a href="#" target="_blank">虾米音乐</a> |
 					<a href="https://moov.hk/share/appshare.jsp?pageid=11&profileId=VASV00223909A" target="_blank">MOOV</a> |
-					<a href="#" target="_blank">QQ音樂</a> |
+					<a href="https://y.qq.com/n/yqq/song/001KUJWn3ZnmGm.html" target="_blank">QQ音樂</a> |
 					<a href="http://music.163.com/#/album?id=35261279" target="_blank">网易云音乐</a> |
 					<a href="http://music.baidu.com/album/537900577?pst=sug" target="_blank">百度音乐</a> |
 					<a href="http://www.kuwo.cn/album/2152799?catalog=yueku2016" target="_blank">酷狗音乐</a> |
-					<a href="#" target="_blank">酷我音乐</a>
+					<a href="http://www.kugou.com/yy/html/search.html#searchType=song&searchKeyWord=蔡佩轩 妮妮" target="_blank">酷我音乐</a>
 				</p>
 				<div class="ringBoxTxt">
 					<h3>來電答鈴下載：</h3>
@@ -273,7 +272,7 @@
 		</div>
 
 		<div class="aboutBox" id="anchor5">
-			<div class="aboutBoxImg"><img src="{% static "img/0221.jpg"%}" /></div>
+			<!--<div class="aboutBoxImg"><img src="{% static "img/0221.jpg"%}" /></div>-->
 			<div class="aboutBoxTxt">
 				<h2>關於 Ariel</h2>
 				<p>

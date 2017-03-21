@@ -9,7 +9,7 @@
 <meta property="og:type" content="website" ></meta>
 <meta property="og:description" content="清新創作女聲- 蔡佩軒 Ariel Tsai" ></meta>
 <meta property="og:image" content="/static/img/banner2.jpg" ></meta>
-<meta property="og:url" content="http://nicokim.cc" ></meta>
+<meta property="og:url" content="http://arieltsai.cc/" ></meta>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
@@ -34,58 +34,15 @@
   <!-- /pilipress::fb_admins -->
 	<meta charset="utf-8">
 <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '738631256291664',
-      xfbml      : true,
-      version    : 'v2.4'
-    });
-
-    var comment_onload = function(url, html_element) {
-		console.log("comment_onload");
-		console.log(url);
-		console.log(html_element);
-	}
-
-	var comment_create = function(url, html_element) {
-		console.log("comment_create");
-		console.log(url);
-		console.log(html_element);
-		{% if request.user.is_authenticated %}
-		$.ajax({
-		  type: 'POST',
-		  url: "/action/comment_post/",
-		  data: JSON.stringify({"user":"{{request.user.id}}", "content":url.message, "comment_id":url.commentID, "href":url.href}),
-		  success: function(data) {
-		    console.log(data)
-		  },
-		  dataType: "json",
-		  contentType: "application/json"
-		});
-		{% endif %}
-	}
-
-	// In your onload handler
-	FB.Event.subscribe("xfbml.render", comment_onload);
-	FB.Event.subscribe("comment.create", comment_create);
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "http://connect.facebook.net/zh_TW/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
 
   function fb_share() {
 		//強制更新內容
 		$.ajax({
 		  type: 'GET',
-		  url: "https://graph.facebook.com/?id=http://nicokim.cc&amp;scrape=true&amp;method=post",
+		  url: "https://graph.facebook.com/?id=http://arieltsai.cc&amp;scrape=true&amp;method=post",
 		  success: function(data) {
 		    console.log(data)
-		    window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent('http://nicokim.cc/')))
+		    window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent('http://arieltsai.cc/')))
 		  }
 		});
 
@@ -103,7 +60,7 @@
            var target = $(this.hash);
            $('html,body').animate({
                scrollTop: target.offset().top-100
-           }, 1000);
+           }, 600);
            return false;
        });
 
@@ -116,7 +73,7 @@
 <div class="wrap">
 	<header>
 		<div class="logoBox">
-			<a href="http://nicokim.cc" target="_blank"><img src="{% static "img/ArielWhite.png"%}" style="width: 100px;margin-top: 12px;" /></a>
+			<a href="#" target="_blank"><img src="{% static "img/ArielWhite.png"%}" style="width: 100px;margin-top: 12px;" /></a>
 			<div id="loginBox" {% if not request.user.is_authenticated %}style=
 			"display:none"{% else %}style=
 			"display:none;" {% endif %}>
@@ -142,9 +99,9 @@
 		<div class="tabs fixed show-tab dark" fixed-tabs="#tv-tabs" ng-class="{'show-tab' : showTabs}" style="z-index:99;">
 	  		<a href="#anchor1" class="tab" style="margin-left:5px;">直播節目</a>｜
 	  		<a href="#anchor2" class="tab">熱門歌曲</a>｜
-	  		<a href="#anchor3" class="tab">歌曲/鈴聲下載</a>｜
+	  		<a href="#anchor3" class="tab">歌曲下載</a>｜
 	  		<a href="#anchor5" class="tab">關於Ariel</a>｜
-	  		<a href="https://www.facebook.com/groups/605431339647039/?fref=ts" target="_blank" class="tab">加入社團</a>｜
+	  		<a href="https://www.facebook.com/groups/605431339647039/?fref=ts" target="_blank" class="tab">加入小魚社團</a>｜
 	  		<a href="#anchor6" class="tab">相關社群</a>｜
 	  		<a href="https://docs.google.com/a/supermedia.cool/forms/d/e/1FAIpQLSd_jLaqfqOk07l-7cw1KquwX6cQw91yb13DqghgiudZAF135g/viewform" target="_blank" class="tab">與我合作</a>
 		</div>
@@ -152,14 +109,12 @@
 	<div class="container" id="anchor1">
 		<div class="mvEvent musicBox">
 			<div class="musicBoxImg"><img src="/static/img/banner.jpg"></div>
-			<h2 style="padding-top: 10px;margin-bottom: -15px;">直播節目</h2>
+			<h2 style="padding-top: 20px;margin-bottom: -15px;">直播節目</h2>
 			<p style="padding:10px;line-height:26px;">
-				相關直播請鎖定<br />
+				請鎖定我的臉書直播，按讚追蹤「搶先看」<br />
 				每周一，三，六　晚上10:30<br />
-				直播頻道: <br />
-				<a style="color: #5a4334;" href="http://bit.ly/ariel_tsai_FB" target="_blank"><img src="{% static "img/fb_share.png"%}" width="40" /></a>
-				<a style="color: #5a4334;" href="http://hyperurl.co/4bchea" target="_blank"><img src="{% static "img/live-me.png"%}" width="40" /></a><br />
-				※LIVEME : 下載APP , 搜尋 "蔡佩軒Ariel Tsai"
+				直播頻道<br />
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Farieltsaimusic%2F&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=1705033186453307" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 			</p>
 		</div>
 		<div class="musicBox" id="anchor2">
@@ -238,9 +193,9 @@
 			</div>-->
 		</div>
 		<div class="musicBox" id="anchor3">
-			<h2>歌曲/鈴聲下載</h2>
+			<h2>歌曲下載</h2>
 			<div class="musicBoxTxt">
-				<h3>單曲下載：</h3>
+				<!--<h3>單曲下載：</h3>-->
 				<p>
 					<a href="http://kkbox.fm/aa1omL" target="_blank">KKbox</a> |
 					<a href="https://www.indievox.com/disc/12324" target="_blank">Indievox</a> |
@@ -254,8 +209,8 @@
 					<a href="http://www.kuwo.cn/album/2152799?catalog=yueku2016" target="_blank">酷我音乐</a> |
 					<a href="http://www.kugou.com/yy/html/search.html#searchType=song&searchKeyWord=蔡佩轩 妮妮" target="_blank">酷狗音乐</a>
 				</p>
-				<div class="ringBoxTxt">
-					<h3>來電答鈴下載：</h3>
+				<!--<div class="ringBoxTxt">
+					<!--<h3>來電答鈴下載：</h3>
 					<ul>
 						<li>
 							<a href="#" target="_blank">遠傳</a> |
@@ -275,7 +230,7 @@
 					</ul>
 				</div>
 
-			</div>
+			</div>-->
 		</div>
 
 		<div class="aboutBox" id="anchor5">
@@ -284,6 +239,30 @@
 			<div class="aboutBoxTxt">
 				<p>蔡佩軒 Ariel Tsai（1995年1月23日 - ）新生代創作女歌手，出生於台灣台北，從小移居加拿大溫哥華。現就讀加拿大英屬哥倫比亞大學 (University of British Columbia) 藥學系。</p>
 				<div id="more">
+					<p>蔡佩軒</p>
+					<p>英文名：Ariel Tsai</p>
+					<p>出生地：台北</p>
+					<p>生日：1/23</p>
+					<p>星座：水瓶</p>
+					<p>血型：O型</p>
+					<p>學歷：University of British Columbia (UBC) Pharmacy 藥學系大三</p>
+					<p>興趣愛好：寫歌，彈琴唱歌，看電影，旅遊，與家人朋友吃飯聊天</p>
+					<p>信仰：基督教</p>
+					<p>最難忘的經歷：在大一時創了一個社團 Big Brothers at UBC，不到一年有了超過一百個會員和二十個幹部！</p>
+					<p>最驕傲的事：小學，初中，和高中都第一名畢業</p>
+					<p>最喜歡的事：做音樂</p>
+					<p>最喜歡的電影：傲慢與偏見Pride and Prejudic</p>
+					<p>最喜歡的動物：狗</p>
+					<p>最喜歡的顏色：綠色</p>
+					<p>最喜歡的季節：秋天有楓葉的時候</p>
+					<p>最喜歡的運動：溜冰</p>
+					<p>最喜歡的城市：溫哥華</p>
+					<p>最喜歡的飾物：手錶</p>
+					<p>最喜愛的食物：生魚片，羊肉</p>
+					<p>最喜愛的甜品​​：馬卡龍，milli crepe</p>
+					<p>最喜愛的水果：藍莓，芒果</p>
+					<p>最喜歡的飲料：抹茶類的飲料</p>
+					<p>最大的願望和夢想：能讓大家聽到和喜歡我的音樂！</p><br />
 					<p>
 					新生代創作歌手【蔡佩軒 Ariel Tsai】溫暖翻唱師兄【那對夫妻-KIM林京燁】告白神曲《妮妮》。Ariel 溫暖療癒的嗓音和不同的詮釋方式詮釋《妮妮》，獲得各大媒體相繼報導，佳評如潮。Ariel 因為第一次聽到《妮妮》便覺得很感動很溫暖，所以決定翻唱和傳遞這首歌的正能量，發佈至今已感動百萬聽眾，獲得熱烈迴響。
 					</p>
@@ -298,13 +277,24 @@
 			</div>
 		</div>
 		<a id="moreBtn">展開</a>
-		<div class="shareBox" id="anchor6">
+		<div class="musicBox">
+			<h2>加入小魚家族</h2>
+			<div class="musicBoxTxt">
+				<a href="https://www.facebook.com/groups/605431339647039/" target="_blank" class="joinMe group blueBtn">FB<br>小魚家族社團</a>
+				<a href="https://www.facebook.com/love.warm.ariel/?hc_ref=SEARCH" target="_blank" class="joinMe group brownBtn">FB Ariel<br>全球後援會</a>
+				<a href="https://www.youtube.com/channel/UCDfn4siiQLKSJqKTJdPht0A" target="_blank" class="joinMe group redBtn">Youtube<br>全球後援會</a>
+			</div>
+		</div>
+		<div class="shareBox" id="anchor6" style="margin-bottom:0px;">
 			<h2>相關社群</h2>
 			<div class="shareOther">
-				<a href="http://bit.ly/ariel_tsai_FB" target="_blank"><img src="{% static "img/fb_share.png"%}"></a>
+				<a href="javascript: void(fb_share());">
+					<img src="{% static "img/fb_share.png"%}"/>
+				</a>
+				<!--<a href="http://bit.ly/ariel_tsai_FB" target="_blank"><img src="{% static "img/fb_share.png"%}"></a>-->
 				<a href="http://bit.ly/ariel_tsai_youtube" target="_blank"><img src="{% static "img/youtube.png"%}"></a>
 				<a href="http://bit.ly/ariel_tsai_IG" target="_blank"><img src="{% static "img/IG.png"%}"></a>
-				<a href="http://bit.ly/ariel_kkbox"><img src="{% static "img/kkbox.png"%}"></a>
+				<a href="http://bit.ly/ariel_kkbox" target="_blank"><img src="{% static "img/kkbox.png"%}"></a>
 				<a href="http://bit.ly/ariel_tsai_meipai" target="_blank"><img src="{% static "img/vedio.png"%}"></a>
 				<a href="http://bit.ly/ariel_tsai_weibo" target="_blank"><img src="{% static "img/weibo.png"%}"></a>
 			</div>
@@ -312,7 +302,16 @@
 		</div>
 	</div>
 </div>
-<footer> <p><span>© 2016 SUPER MEDIA All rights reserved</span><a href="mailto:service@supermedia.cool" target="_blank">service@supermedia.cool</a><!--<span class="lineMiddle"> | </span>--></p></footer>
+<footer>
+	<div style="padding-top: 14px;"><img src="{% static "img/logo.svg"%}"></div>
+	<p>
+		<a href="https://docs.google.com/a/supermedia.cool/forms/d/e/1FAIpQLSd_jLaqfqOk07l-7cw1KquwX6cQw91yb13DqghgiudZAF135g/viewform" target="_blank" style="margin-top: 5px;">與我合作</a><br />
+		<a href="mailto:service@supermedia.cool" target="_blank">service@supermedia.cool</a>
+	</p>
+	<p><span>© <a href="http://supermedia.cool/" target="_blank">2016 SUPER MEDIA</a> All rights reserved</span>
+		<!--<span class="lineMiddle"> | </span>-->
+	</p>
+</footer>
 <!--giftBox start-->
 	<div id="fb-root"></div>
 

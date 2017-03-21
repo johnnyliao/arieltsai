@@ -66,7 +66,7 @@ header .menuBox li{
     z-index: 999;
 }
 .wrap .container{
-    padding: 100px 0px 0px 0px;
+    padding: 74px 0px 0px 0px;
 }
 .wrap .container .mvEvent p{
     color:#ccc;
@@ -284,7 +284,6 @@ footer{
     margin: 0 auto;
     font-weight: 100;
     font-size: 14px;
-    border-top: 1px solid #fff;
 }
 footer p{
     margin: 0 10px;

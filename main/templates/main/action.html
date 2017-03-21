@@ -8,7 +8,7 @@
 <meta property="og:title" content="清新創作女聲- 蔡佩軒 Ariel Tsai" ></meta>
 <meta property="og:type" content="website" ></meta>
 <meta property="og:description" content="清新創作女聲- 蔡佩軒 Ariel Tsai" ></meta>
-<meta property="og:image" content="http://nicokim.cc/static/img/banner2.jpg" ></meta>
+<meta property="og:image" content="/static/img/banner2.jpg" ></meta>
 <meta property="og:url" content="http://nicokim.cc" ></meta>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -116,7 +116,7 @@
 <div class="wrap">
 	<header>
 		<div class="logoBox">
-			<a href="http://nicokim.cc" target="_blank"><img src="{% static "img/logo1.png"%}" /></a>
+			<a href="http://nicokim.cc" target="_blank"><img src="{% static "img/ArielWhite.png"%}" style="width: 100px;margin-top: 12px;" /></a>
 			<div id="loginBox" {% if not request.user.is_authenticated %}style=
 			"display:none"{% else %}style=
 			"display:none;" {% endif %}>
@@ -140,20 +140,27 @@
 			</div>
 		</div>
 		<div class="tabs fixed show-tab dark" fixed-tabs="#tv-tabs" ng-class="{'show-tab' : showTabs}" style="z-index:99;">
-	  		<a href="#anchor1" class="tab">活動專區</a>｜
+	  		<a href="#anchor1" class="tab" style="margin-left:5px;">直播節目</a>｜
 	  		<a href="#anchor2" class="tab">熱門歌曲</a>｜
 	  		<a href="#anchor3" class="tab">歌曲/鈴聲下載</a>｜
 	  		<a href="#anchor5" class="tab">關於Ariel</a>｜
+	  		<a href="https://www.facebook.com/groups/605431339647039/?fref=ts" target="_blank" class="tab">加入社團</a>｜
 	  		<a href="#anchor6" class="tab">相關社群</a>｜
 	  		<a href="https://docs.google.com/a/supermedia.cool/forms/d/e/1FAIpQLSd_jLaqfqOk07l-7cw1KquwX6cQw91yb13DqghgiudZAF135g/viewform" target="_blank" class="tab">與我合作</a>
 		</div>
 	</header>
 	<div class="container" id="anchor1">
-		<div class="mvEvent">
-
-		</div>
-		<div class="musicBox">
+		<div class="mvEvent musicBox">
 			<div class="musicBoxImg"><img src="/static/img/banner.jpg"></div>
+			<h2 style="padding-top: 10px;margin-bottom: -15px;">直播節目</h2>
+			<p style="padding:10px;line-height:26px;">
+				相關直播請鎖定<br />
+				每周一，三，六　晚上10:30<br />
+				直播頻道: <br />
+				<a style="color: #5a4334;" href="http://bit.ly/ariel_tsai_FB" target="_blank"><img src="{% static "img/fb_share.png"%}" width="40" /></a>
+				<a style="color: #5a4334;" href="http://hyperurl.co/4bchea" target="_blank"><img src="{% static "img/live-me.png"%}" width="40" /></a><br />
+				※LIVEME : 下載APP , 搜尋 "蔡佩軒Ariel Tsai"
+			</p>
 		</div>
 		<div class="musicBox" id="anchor2">
 			<!--<div class="musicBoxImg"><img src="{% static "img/0206.jpg"%}" /></div>-->
@@ -162,77 +169,77 @@
 		    <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:610px;margin:0px auto 56px;">
 		        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
 		            <ul class="amazingslider-slides" style="display:none;">
-		                <li><img src="{% static "img/AsC0CN2eGkY.jpg"%}" />
-		                <video preload="none" src="https://www.youtube.com/embed/AsC0CN2eGkY?v=AsC0CN2eGkY" ></video>
-		                </li>
-		                <li><img src="{% static "img/RbPI1_y1RAo.jpg"%}" />
-		                <video preload="none" src="https://www.youtube.com/embed/RbPI1_y1RAo?v=RbPI1_y1RAo" ></video>
-		                </li>
-		                <li><img src="{% static "img/K1BJ4M14ANQ.jpg"%}" />
-		                <video preload="none" src="https://www.youtube.com/embed/K1BJ4M14ANQ?v=K1BJ4M14ANQ" ></video>
-		                </li>
 		                <li><img src="{% static "img/6RFSEz0OqWY.jpg"%}" />
 		                <video preload="none" src="https://www.youtube.com/embed/6RFSEz0OqWY?v=6RFSEz0OqWY" ></video>
+		                </li>
+		                <li><img src="{% static "img/AsC0CN2eGkY.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/AsC0CN2eGkY?v=AsC0CN2eGkY" ></video>
 		                </li>
 		                <li><img src="{% static "img/lTjNFA4NmBc.jpg"%}" />
 		                <video preload="none" src="https://www.youtube.com/embed/lTjNFA4NmBc?v=lTjNFA4NmBc" ></video>
 		                </li>
-		                <li><img src="{% static "img/QG1zfZ8Q0MQ.jpg"%}" />
-		                <video preload="none" src="https://www.youtube.com/embed/QG1zfZ8Q0MQ?v=QG1zfZ8Q0MQ" ></video>
-		                </li>
-		                <li><img src="{% static "img/fFSePi_E4Zk.jpg"%}" />
-		                <video preload="none" src="https://www.youtube.com/embed/fFSePi_E4Zk?v=fFSePi_E4Zk" ></video>
+		                <li><img src="{% static "img/K1BJ4M14ANQ.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/K1BJ4M14ANQ?v=K1BJ4M14ANQ" ></video>
 		                </li>
 		                <li><img src="{% static "img/6CWw2RyBXC8.jpg"%}" />
 		                <video preload="none" src="https://www.youtube.com/embed/6CWw2RyBXC8?v=6CWw2RyBXC8" ></video>
 		                </li>
-		                <li><img src="{% static "img/DMFAtrY343k.jpg"%}" />
-		                <video preload="none" src="https://www.youtube.com/embed/DMFAtrY343k?v=DMFAtrY343k" ></video>
-		                </li>
-		                <li><img src="{% static "img/9s0oYrYwDOY.jpg"%}" />
-		                <video preload="none" src="https://www.youtube.com/embed/9s0oYrYwDOY?v=9s0oYrYwDOY" ></video>
-		                </li>
-		                <li><img src="{% static "img/D5wO_WttZbo.jpg"%}" />
-		                <video preload="none" src="https://www.youtube.com/embed/D5wO_WttZbo?v=D5wO_WttZbo" ></video>
+		                <li><img src="{% static "img/fFSePi_E4Zk.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/fFSePi_E4Zk?v=fFSePi_E4Zk" ></video>
 		                </li>
 		                <li><img src="{% static "img/NB4TzUeE_H0.jpg"%}" />
 		                <video preload="none" src="https://www.youtube.com/embed/NB4TzUeE_H0?v=NB4TzUeE_H0" ></video>
 		                </li>
-		                <li><img src="{% static "img/ErII2m5xWUg.jpg"%}" />
-		                <video preload="none" src="https://www.youtube.com/embed/ErII2m5xWUg?v=ErII2m5xWUg" ></video>
+		                <li><img src="{% static "img/D5wO_WttZbo.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/D5wO_WttZbo?v=D5wO_WttZbo" ></video>
+		                </li>
+		                <li><img src="{% static "img/9s0oYrYwDOY.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/9s0oYrYwDOY?v=9s0oYrYwDOY" ></video>
+		                </li>
+		                <li><img src="{% static "img/DMFAtrY343k.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/DMFAtrY343k?v=DMFAtrY343k" ></video>
+		                </li>
+		                <li><img src="{% static "img/RbPI1_y1RAo.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/RbPI1_y1RAo?v=RbPI1_y1RAo" ></video>
 		                </li>
 		                <li><img src="{% static "img/ns7Ox9DujJM.jpg"%}" />
 		                <video preload="none" src="https://www.youtube.com/embed/ns7Ox9DujJM?v=ns7Ox9DujJM" ></video>
 		                </li>
+		                <li><img src="{% static "img/ErII2m5xWUg.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/ErII2m5xWUg?v=ErII2m5xWUg" ></video>
+		                </li>
+		                <li><img src="{% static "img/QG1zfZ8Q0MQ.jpg"%}" />
+		                <video preload="none" src="https://www.youtube.com/embed/QG1zfZ8Q0MQ?v=QG1zfZ8Q0MQ" ></video>
+		                </li>
 		            </ul>
 		            <ul class="amazingslider-thumbnails" style="display:none;">
+		            	<li><img src="{% static "img/6RFSEz0OqWY-tn.jpg"%}" /></li>
 		                <li><img src="{% static "img/AsC0CN2eGkY-tn.jpg"%}" /></li>
-		                <li><img src="{% static "img/RbPI1_y1RAo-tn.jpg"%}" /></li>
-		                <li><img src="{% static "img/K1BJ4M14ANQ-tn.jpg"%}" /></li>
-		                <li><img src="{% static "img/6RFSEz0OqWY-tn.jpg"%}" /></li>
-		                <li><img src="{% static "img/lTjNFA4NmBc-tn.jpg"%}" /></li>
-		                <li><img src="{% static "img/QG1zfZ8Q0MQ-tn.jpg"%}" /></li>
-		                <li><img src="{% static "img/fFSePi_E4Zk-tn.jpg"%}" /></li>
-		                <li><img src="{% static "img/6CWw2RyBXC8-tn.jpg"%}" /></li>
-		                <li><img src="{% static "img/DMFAtrY343k-tn.jpg"%}" /></li>
-		                <li><img src="{% static "img/9s0oYrYwDOY-tn.jpg"%}" /></li>
-		                <li><img src="{% static "img/D5wO_WttZbo-tn.jpg"%}" /></li>
-		                <li><img src="{% static "img/NB4TzUeE_H0-tn.jpg"%}" /></li>
+		                <li><img src="{% static "img/lTjNFA4NmBc-tn.jpg"%}"  /></li>
+		                <li><img src="{% static "img/K1BJ4M14ANQ-tn.jpg"%}"  /></li>
+		                <li><img src="{% static "img/6CWw2RyBXC8-tn.jpg"%}"  /></li>
+		                <li><img src="{% static "img/fFSePi_E4Zk-tn.jpg"%}"  /></li>
+		                <li><img src="{% static "img/NB4TzUeE_H0-tn.jpg"%}"  /></li>
+		                <li><img src="{% static "img/D5wO_WttZbo-tn.jpg"%}"  /></li>
+		                <li><img src="{% static "img/9s0oYrYwDOY-tn.jpg"%}"  /></li>
+		                <li><img src="{% static "img/DMFAtrY343k-tn.jpg"%}"  /></li>
+		                <li><img src="{% static "img/RbPI1_y1RAo-tn.jpg"%}"  /></li>
+		                <li><img src="{% static "img/ns7Ox9DujJM-tn.jpg"%}"  /></li>
 		                <li><img src="{% static "img/ErII2m5xWUg-tn.jpg"%}" /></li>
-		                <li><img src="{% static "img/ns7Ox9DujJM-tn.jpg"%}" /></li>
+		                <li><img src="{% static "img/QG1zfZ8Q0MQ-tn.jpg"%}"  /></li>
 		            </ul>
 		        <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Responsive JavaScript Image Slider">Responsive JavaScript Image Slider</a></div>
 		        </div>
 		    </div>
 		    <!-- End of body section HTML codes -->
 			<!--影片輪播 End-->
-			<div class="musicBoxTxt">
+			<!--<div class="musicBoxTxt">
 				<h2>清新創作女聲-蔡佩軒 Ariel Tsai</h2>
-			</div>
+			</div>-->
 		</div>
 		<div class="musicBox" id="anchor3">
+			<h2>歌曲/鈴聲下載</h2>
 			<div class="musicBoxTxt">
-				<h2>清新創作女聲-蔡佩軒 Ariel Tsai</h2>
 				<h3>單曲下載：</h3>
 				<p>
 					<a href="http://kkbox.fm/aa1omL" target="_blank">KKbox</a> |
@@ -275,22 +282,26 @@
 
 		<div class="aboutBox" id="anchor5">
 			<!--<div class="aboutBoxImg"><img src="{% static "img/0221.jpg"%}" /></div>-->
+			<h2>關於 Ariel</h2>
 			<div class="aboutBoxTxt">
-				<h2>關於 Ariel</h2>
-				<p>
-					新生代創作歌手【蔡佩軒 Ariel Tsai】溫暖翻唱師兄【那對夫妻-KIM林京燁】告白神曲《妮妮》。Ariel 溫暖療癒的嗓音和不同的詮釋方式詮釋《妮妮》，獲得各大媒體相繼報導，佳評如潮。Ariel 因為第一次聽到《妮妮》便覺得很感動很溫暖，所以決定翻唱和傳遞這首歌的正能量，發佈至今已感動百萬聽眾，獲得熱烈迴響。
-				</p>
 				<p>蔡佩軒 Ariel Tsai（1995年1月23日 - ）新生代創作女歌手，出生於台灣台北，從小移居加拿大溫哥華。現就讀加拿大英屬哥倫比亞大學 (University of British Columbia) 藥學系。</p>
-				<p>Ariel 5歲開始學鋼琴，從小喜歡音樂喜歡寫歌，在14歲的時候寫出第一首完整自己作詞作曲的歌。
-				<p>平常除了錄音寫歌之外，空閑的時候在教會服侍，帶小組和敬拜樂團擔任主領主唱。現在就讀ＵＢＣ藥學系大三。最喜歡跟家人朋友在一起和看很多很多的電影！</p>
-				<p>2016年9月Ariel開始在臉書經營自彈自唱的直播節目，翻唱許多熱門排行榜好歌，深獲觀眾喜愛，至今累積超過50集平均每集直播10-20萬次瀏覽。</p>
-				<p>Rising singer/songwriter Ariel Tsai covers “Nini,” the number one hit love song in Asia originally by Kim from The Couple. Ariel reinterprets the song with her warm and comforting vocals, gaining a lot of media attention from famous news sources and various social media platforms. When Ariel first heard “Nini,” she was very moved by the song and decided to cover it in hopes of spreading that same positive energy to those who heard it as well. Within 2 weeks of its release, Ariel’s cover of “Nini” hit over 1.8 million views, continuing to impact and touch many who hear the song.
-Ariel Tsai (born 23 January 1995) is a Taiwanese singer/songwriter, born in Taipei, Taiwan and grew up in Vancouver, Canada. She is currently studying Pharmacy at the University of British Columbia. </p>
-				<p>Passionate about music from a young age, Ariel started playing piano at age 5 and wrote her first song at age 14. </p>
-				<p>Since September 2016, Ariel has been livestreaming on her Facebook page, showcasing her singing and piano playing skills by covering various popular songs live. She has gained immensely positive feedback and attention since then, with over 50 livestream episodes, each with an average of 100K to 200K views.</p>
+				<div id="more">
+					<p>
+					新生代創作歌手【蔡佩軒 Ariel Tsai】溫暖翻唱師兄【那對夫妻-KIM林京燁】告白神曲《妮妮》。Ariel 溫暖療癒的嗓音和不同的詮釋方式詮釋《妮妮》，獲得各大媒體相繼報導，佳評如潮。Ariel 因為第一次聽到《妮妮》便覺得很感動很溫暖，所以決定翻唱和傳遞這首歌的正能量，發佈至今已感動百萬聽眾，獲得熱烈迴響。
+					</p>
+					<p>Ariel 5歲開始學鋼琴，從小喜歡音樂喜歡寫歌，在14歲的時候寫出第一首完整自己作詞作曲的歌。
+					<p>平常除了錄音寫歌之外，空閑的時候在教會服侍，帶小組和敬拜樂團擔任主領主唱。現在就讀ＵＢＣ藥學系大三。最喜歡跟家人朋友在一起和看很多很多的電影！</p>
+					<p>2016年9月Ariel開始在臉書經營自彈自唱的直播節目，翻唱許多熱門排行榜好歌，深獲觀眾喜愛，至今累積超過50集平均每集直播10-20萬次瀏覽。</p>
+					<p>Rising singer/songwriter Ariel Tsai covers “Nini,” the number one hit love song in Asia originally by Kim from The Couple. Ariel reinterprets the song with her warm and comforting vocals, gaining a lot of media attention from famous news sources and various social media platforms. When Ariel first heard “Nini,” she was very moved by the song and decided to cover it in hopes of spreading that same positive energy to those who heard it as well. Within 2 weeks of its release, Ariel’s cover of “Nini” hit over 1.8 million views, continuing to impact and touch many who hear the song.
+	Ariel Tsai (born 23 January 1995) is a Taiwanese singer/songwriter, born in Taipei, Taiwan and grew up in Vancouver, Canada. She is currently studying Pharmacy at the University of British Columbia. </p>
+					<p>Passionate about music from a young age, Ariel started playing piano at age 5 and wrote her first song at age 14. </p>
+					<p>Since September 2016, Ariel has been livestreaming on her Facebook page, showcasing her singing and piano playing skills by covering various popular songs live. She has gained immensely positive feedback and attention since then, with over 50 livestream episodes, each with an average of 100K to 200K views.</p>
+				</div>
 			</div>
 		</div>
+		<a id="moreBtn">展開</a>
 		<div class="shareBox" id="anchor6">
+			<h2>相關社群</h2>
 			<div class="shareOther">
 				<a href="http://bit.ly/ariel_tsai_FB" target="_blank"><img src="{% static "img/fb_share.png"%}"></a>
 				<a href="http://bit.ly/ariel_tsai_youtube" target="_blank"><img src="{% static "img/youtube.png"%}"></a>
@@ -303,10 +314,25 @@ Ariel Tsai (born 23 January 1995) is a Taiwanese singer/songwriter, born in Taip
 		</div>
 	</div>
 </div>
-<footer> <p><span>© 設計：</span><a href="http://supermedia.cool" target="_blank">SUPER MEDIA</a><span class="lineMiddle"> | </span><span>版權所有：</span><a href="http://nicokim.cc" target="_blank">蔡佩軒 Ariel Tsai</a></p></footer>
+<footer> <p><span>© 2016 SUPER MEDIA All rights reserved</span><a href="mailto:service@supermedia.cool" target="_blank">service@supermedia.cool</a><span class="lineMiddle"> | </span></p></footer>
 <!--giftBox start-->
 	<div id="fb-root"></div>
 
   	<!--giftBox End-->
+  	<!--關於Ariel 顯視更多 start-->
+  	<script type="text/javascript">
+  	$( "#moreBtn" ).click(function() {
+	   $( "#more" ).slideToggle( "fast", function() {
+	     // Animation complete.
+	     if($("#more").css('display') == 'block'){
+		   	 $( "#moreBtn" ).html("收起");
+		   }else if($("#more").css('display') == 'none'){
+		   	 $( "#moreBtn" ).html("展開");
+		   }
+	   });
+
+	 });
+  	</script>
+  	<!--關於Ariel 顯視更多 End-->
 </body>
 </html>

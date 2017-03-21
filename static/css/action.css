@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* 載入 */
 body{
-    background: #FFF;
+    background: #000;
     font-family: Arial,Heiti TC, Helvetica, sans-serif,Microsoft JhengHei;
     cursor: auto;
     color: #858585;
@@ -18,9 +18,14 @@ h2{
     line-height: 125%;
     letter-spacing: normal;
     text-align: left;
+    padding-top: 10px;
+    margin-bottom: -15px;
+    border-bottom: 2px solid #B09A77;
+    margin: 0px 10px;
+    color: #B09A77;
 }
 a{
-    color: #f38daf;
+    color: #5a4334;
     font-weight: bold;
     text-decoration: none;
 }
@@ -30,8 +35,7 @@ p{
 .wrap{
     max-width: 640px;
     margin: 0 auto;
-    background-color: #f6f7f9;
-    padding-bottom: 20px;
+    background-color: #000000;
     border-top: 0;
     border-bottom: 0;
     padding-top: 0;
@@ -43,14 +47,14 @@ header{
     position: fixed;
     top: 0px;
     z-index: 999999;
-    background: #fff;
+    background: #000000;
     width: 100% !important;
     max-width: 640px;
     margin: 0 auto;
     float: none !important;
 }
 header img{
-    height: 50px;
+    /*height: 50px;*/
 }
 header .menuBox li{
     display: inline-block;
@@ -60,10 +64,12 @@ header .menuBox li{
     padding:5px;
     position: relative;
     z-index: 999;
-    border-bottom: 1px solid #e8e8e8;
 }
 .wrap .container{
-    padding:120px 15px 0px 15px;
+    padding: 100px 0px 0px 0px;
+}
+.wrap .container .mvEvent p{
+    color:#fff;
 }
 .wrap .container #amazingslider-wrapper-1{
     margin: 0px auto 20px !important;
@@ -91,11 +97,12 @@ header .menuBox li{
     font-size: 18px;
 }
 .wrap .container .ringBox,.wrap .container .musicBox,.wrap .container .bookBox,.wrap .container .aboutBox,.wrap .container .bannerBox,.wrap .container .shareBox{
-    background: #FFF;
+    background: #000;
     margin: 20px 0px;
 }
 .wrap .container .ringBox h3,.wrap .container .musicBox h3,.wrap .container .bookBox h3,.wrap .container .aboutBox h3,.wrap .container .bannerBox h3,.wrap .container .shareBox h3{
     margin: 10px 0px;
+    color: #FFF;
 }
 .wrap .container .ringBox .ringBoxImg img,.wrap .container .musicBox .musicBoxImg img,.wrap .container .bookBox .bookBoxImg img,.wrap .container .aboutBox .aboutBoxImg img,.wrap .container .bannerBox .bannerBoxImg img,.wrap .container .shareBox .shareBoxImg img{
     width: 100%;
@@ -105,12 +112,18 @@ header .menuBox li{
     line-height: 150%;
     margin-top: 10px;
 }
+.wrap .container .shareBox .shareOther{
+    margin-top: 15px;
+}
 .wrap .container .ringBoxTxt li{
     display: inline-block;
     vertical-align: top;
 }
+.container .musicBox .musicBoxTxt{
+    color: #666;
+}
 .container .musicBox .musicBoxTxt a{
-    color: #f38daf;
+    color: #7a6530;
     font-weight: bold;
     text-decoration: none;
 }
@@ -133,7 +146,20 @@ header .menuBox li{
     margin-bottom:15px;
 }
 .container .musicBoxTxt,.container .aboutBoxTxt{
-    padding: 10px;
+    padding: 0px 10px;
+    color: #FFF;
+}
+#moreBtn{
+    display: block;
+    background: #343434;
+    padding: 5px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 100;
+    width: 95%;
+    margin: 0 auto;
 }
 header .loginBox{
     display: inline-block;
@@ -213,19 +239,20 @@ header #loginBox a{
     vertical-align: middle;
 }
 footer{
-    background: #e8e8e8;
-    height: 45px;
-    line-height: 45px;
+    background: #c09953;
+    height: 80px;
+    line-height: 35px;
     text-align: center;
     max-width: 640px;
     margin: 0 auto;
     font-weight: 100;
     font-size: 14px;
+    text-shadow: 1px 1px 4px #656565;
 }
 footer p{
     margin: 0 10px;
     text-align: center;
-    color: #858585;
+    color: #FFF;
     font-weight: bold;
 }
 footer span{
@@ -236,7 +263,7 @@ footer .lineMiddle{
     vertical-align: top;
 }
 footer a{
-    color: #858585;
+    color: #FFF;
     font-weight:bold;
     display: inline-block;
 }
@@ -373,6 +400,9 @@ footer a{
 }
 .sweet-modal-content{
     padding-bottom: 100px;
+}
+#more{
+    display: none;
 }
 td{
     font-size: 12px;

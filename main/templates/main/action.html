@@ -303,9 +303,10 @@
 		<div class="shareBox" id="anchor6" style="margin-bottom:0px;">
 			<h2>相關社群</h2>
 			<div class="shareOther">
-				<a href="javascript: void(fb_share());">
+				<a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));" title="推上Facebook"> <img src="{% static "img/fb_share.png"%}"/> </a>
+				<!--<a href="javascript: void(fb_share());">
 					<img src="{% static "img/fb_share.png"%}"/>
-				</a>
+				</a>-->
 				<!--<a href="http://bit.ly/ariel_tsai_FB" target="_blank"><img src="{% static "img/fb_share.png"%}"></a>-->
 				<a href="http://bit.ly/ariel_tsai_youtube" target="_blank"><img src="{% static "img/youtube.png"%}"></a>
 				<a href="http://bit.ly/ariel_tsai_IG" target="_blank"><img src="{% static "img/IG.png"%}"></a>

@@ -17,6 +17,9 @@ import urlparse, settings
 
 #for facebook comment plugin record
 class Action(models.Model):
+    name = models.CharField(_(u"姓名"), max_length=100)
+    phone = models.CharField(_(u"電話"), max_length=100)
+    email = models.CharField(_(u"EMAIL"), max_length=100)
 
     class Meta:
         verbose_name = _(u'活動')

@@ -18,6 +18,7 @@
 <link href="{% static "css/reset.css"%}" rel="stylesheet" type="text/css" />
 <link href="{% static "css/action.css"%}" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="{% static "css/categorySlide.css"%}">
+<link rel="stylesheet" type="text/css" href="{% static "css/font-awesome.css"%}">
 <script type="text/javascript" src="{% static "js/jquery-1.8.2.min.js"%}"></script>
 <script type="text/javascript" src="{% static "js/public.js"%}"></script>
 
@@ -26,6 +27,7 @@
 <link rel="stylesheet" type="text/css" href="{% static "js/amazingslider-1.css"%}">
 <script src="{% static "js/initslider-1.js"%}"></script>
 <!--輪播用 End-->
+
 
 <!--FB留言用 start-->
 <!-- pilipress::fb_admins -->
@@ -292,12 +294,39 @@
 				<a href="https://www.youtube.com/channel/UCDfn4siiQLKSJqKTJdPht0A" target="_blank" class="joinMe group redBtn">Youtube<br>全球後援會</a>
 			</div>
 		</div>
-		<div class="musicBox" style="display:none;">
-			<h2>小魚家族見面會</h2>
+		<!--<div class="grayBg"></div>-->
+		<div id="joinFansMeet">
+			<div class="fansMeetTit">
+				<h1>粉絲見面會</h1>
+				<span class="closeBtn"><img src="/static/img/close.png" width="20"></span>
+			</div>
+			<div class="fansMeetCont">
+			<form>
+				<ul class="joinFromBox">
+					<li class="joinFromItem">
+						<span class="lebal1">姓名</span>
+						<input id="name" type="text" name="name" placeholder="請填寫姓名">
+					</li>
+					<li class="joinFromItem">
+						<span class="lebal1">手機</span>
+						<input id="mobile" type="text" name="mobile" placeholder="請填寫手機">
+					</li>
+					<li class="joinFromItem">
+						<span class="lebal2">Email</span>
+						<input id="email" type="text" name="email" placeholder="請填寫Email">
+					</li>
+				</ul>
+				<div class="submitBox">
+					<input type="submit" class="submitBtn" value="送出">
+				</div>
+			</form>
+		</div>
+		</div>
+		<div class="musicBox">
+			<h2>小魚家族台北粉絲見面會</h2>
 			<div class="musicBoxTxt">
-				<form>
-
-				</form>
+				<p>為了感謝大家的支持 我6.7月會回台灣跟大家見面，我需要知道有多少人，才知道要找什麼樣場地比較合適，我想知道你們會不會參加...</p>
+				<a id="joinFansMeetBtn">我願意參加</a>
 			</div>
 		</div>
 		<div class="shareBox" id="anchor6" style="margin-bottom:0px;">
@@ -345,7 +374,42 @@
 	   });
 
 	 });
+  	$( "#joinFansMeetBtn" ).click(function() {
+  		$(".grayBg").fadeIn(50);
+  		$("#joinFansMeet").show(50);
+	});
+	$( ".grayBg" ).click(function() {
+  		$(".grayBg").fadeOut(50);
+  		$("#joinFansMeet").fadeOut(50);
+	});
+	$( ".closeBtn" ).click(function() {
+  		$(".grayBg").fadeOut(50);
+  		$("#joinFansMeet").fadeOut(50);
+	});
+
   	</script>
   	<!--關於Ariel 顯視更多 End-->
+  	<!--判斷空值  start-->
+  	<script>
+  	$( ".submitBtn" ).click(function() {
+	var name = jQuery("#name").val();
+	var mobile = jQuery("#mobile").val();
+	var email = jQuery("#email").val();
+		if(jQuery.trim(name) == ""){
+		alert("姓名不可為空!");
+		jQuery("#name").focus();
+		}
+		if(jQuery.trim(mobile) == ""){
+		alert("手機不可為空!");
+		jQuery("#mobile").focus();
+		}
+		if(jQuery.trim(email) == ""){
+		alert("Email不可為空!");
+		jQuery("#email").focus();
+		}
+		event.preventDefault();
+	});
+	</script>
+	<!--判斷空值 End-->
 </body>
 </html>

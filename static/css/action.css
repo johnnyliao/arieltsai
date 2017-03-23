@@ -173,18 +173,18 @@ header .menuBox li{
 }
 .brownBtn{
     background: #3e5c9d;
-    border: 1px solid #5c93c2;
+    border: none;
     color: #FFF!important;
 }
 .blueBtn{
     background: #3e5c9d;
-    border: 1px solid #5c93c2;
+    border: none;
     color: #FFF!important;
     vertical-align: top;
 }
 .redBtn{
     background: #974d47;
-    border: 1px solid #d0716a;
+    border: none;
     color: #FFF!important;
 }
 .brownBtn:active{
@@ -466,15 +466,16 @@ table li{
 .sweet-modal-overlay.open .sweet-modal-box .sweet-modal-content, .sweet-modal-overlay.open .sweet-modal-box .sweet-modal-buttons{
     height: 100%!important;
 }
-#joinFansMeetBtn{
-    color: #FFF;
-    background: rgba(93, 89, 82, 0.75);
+#joinFansMeetBtn {
+    background: rgb(0, 0, 0);
     padding: 5px;
     border-radius: 4px;
     width: 100%;
     display: block;
     text-align: center;
-    border: 1px solid #888888;
+    border: 1px solid #ffffff;
+    font-weight: 100;
+    color: #FFF;
 }
 #joinFansMeet{
     display: none;
@@ -497,11 +498,12 @@ table li{
 #joinFansMeet .fansMeetTit h1{
     display: inline-block;
     line-height: 35px;
-    font-size: 16px;
+    font-size: 18px;
 }
 #joinFansMeet .fansMeetTit .closeBtn{
     display: inline-block;
     float: right;
+    margin-top: 5px;
 }
 #joinFansMeet .fansMeetCont{
     margin-top: 15px;

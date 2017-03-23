@@ -36,8 +36,20 @@
   <!-- /pilipress::fb_admins -->
 	<meta charset="utf-8">
 <script>
+	function join_action() {
+		$.ajax({
+		  type: 'POST',
+		  url: "/main/join_action/",
+		  data: JSON.stringify({"name":$("#name").val(), "phone":$("#phone").val(), "email":$("#email").val()}),
+		  success: function(data) {
+		    console.log(data)
+		  },
+		  dataType: "json",
+		  contentType: "application/json"
+		});
+	}
 
-  function fb_share() {
+  	function fb_share() {
 		//強制更新內容
 		$.ajax({
 		  type: 'GET',
@@ -309,7 +321,7 @@
 					</li>
 					<li class="joinFromItem">
 						<span class="lebal1">手機</span>
-						<input id="mobile" type="text" name="mobile" placeholder="請填寫手機">
+						<input id="phone" type="text" name="mobile" placeholder="請填寫手機">
 					</li>
 					<li class="joinFromItem">
 						<span class="lebal2">Email</span>
@@ -317,7 +329,7 @@
 					</li>
 				</ul>
 				<div class="submitBox">
-					<button type="submit" class="submitBtn">送出</button>
+					<button onclick="join_action()" type="submit" class="submitBtn">送出</button>
 				</div>
 			</form>
 			<div id="submitSuccess" style="display:none;">

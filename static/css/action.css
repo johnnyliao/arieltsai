@@ -526,6 +526,7 @@ table li{
     border-radius: 4px;
     width: 80%;
     margin-bottom: 10px;
+    font-size: 16px;
 }
 .grayBg{
     display: none;

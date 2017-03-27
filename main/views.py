@@ -38,7 +38,7 @@ from django.db.models import Q
 import pytz
 
 def index(request):
-    videos = VideoLink.objects.all()
+    videos = VideoLink.objects.all().order_by("count")
     return render_to_response("main/action.html", locals(), context_instance=RequestContext(request))
 
 

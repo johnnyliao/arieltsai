@@ -190,6 +190,12 @@
 		                <li><img src="{% static "img/QG1zfZ8Q0MQ.jpg"%}" />
 		                <video preload="none" src="https://www.youtube.com/embed/QG1zfZ8Q0MQ?v=QG1zfZ8Q0MQ" ></video>
 		                </li>
+		                {% for item in videos %}
+		                	<li>
+		                		<img src="{{item.photo.url}}" />
+			                	<video preload="none" src="{{item.link}}" ></video>
+			                </li>
+		                {% endfor %}
 		            </ul>
 		            <ul class="amazingslider-thumbnails" style="display:none;">
 		            	<li><img src="{% static "img/6RFSEz0OqWY-tn.jpg"%}" /></li>

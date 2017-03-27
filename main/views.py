@@ -13,6 +13,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.utils import timezone
 from django.middleware.csrf import get_token
 from main.serializers import ActionSerializer
+from main.models import *
 import requests
 from allauth.socialaccount import providers
 from allauth.socialaccount.providers.facebook.provider import FacebookProvider
@@ -37,6 +38,7 @@ from django.db.models import Q
 import pytz
 
 def index(request):
+    videos = VideoLink.objects.all()
     return render_to_response("main/action.html", locals(), context_instance=RequestContext(request))
 
 

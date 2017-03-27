@@ -12,7 +12,7 @@ class ActionAdmin(SalmonellaMixin, admin.ModelAdmin):
     search_fields = ["name"]
 
 class VideoLinkAdmin(SalmonellaMixin, admin.ModelAdmin):
-    list_display = ["link", "image_tag"]
+    list_display = ["link", "image_tag", "count"]
     search_fields = ["link"]
 
 

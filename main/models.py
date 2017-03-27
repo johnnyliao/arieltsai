@@ -30,6 +30,7 @@ class Action(models.Model):
 class VideoLink(models.Model):
 	link = models.CharField(_(u"連結"), max_length=100)
 	photo = models.ImageField(_(u"預覽圖"), upload_to='main/pre_photo')
+	count = models.IntegerField(_(u"順序"))
 
 	def image_tag(self):
 		return '<img style="width:100px;height:100px" src="' + self.photo.url + '" />'
